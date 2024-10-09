@@ -169,6 +169,23 @@ $(document).ready(function(){
 		}
 	});
 
+		// Handle 'Awards' content
+		$('#awards').click(function(e) {
+
+			// If the div has already the class active, no need to reload the divs...
+			if(!$(e.target).hasClass('active')) {
+				// Update navbar
+				clearActiveLinks();
+				activateLink(e);
+	
+				// Hide other contents
+				clearActiveDivs();
+	
+				// Show current content
+				activateDiv('#awardsContent');
+			}
+		});
+
 
 	// Handle 'Photos' content
 	// $('#photos').click(function(e) {
