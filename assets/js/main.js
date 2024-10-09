@@ -9,6 +9,7 @@ $(document).ready(function(){
 	$('#blogContent').hide();
 	$('#academicContent').hide();
 	$('#particularContent').hide();
+	$('#awardsContent').hide();
 	// $('#photosContent').hide();
 
 	// Options menu is hidden by default
