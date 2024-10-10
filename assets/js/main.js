@@ -137,34 +137,19 @@ $(document).ready(function(){
 	});
 
 	// Handle 'Experience' content
-	// $('#experience').click(function(e) {
-
-	// 	// If the div has already the class active, no need to reload the divs...
-	// 	if(!$(e.target).hasClass('active')) {
-	// 		// Update navbar
-	// 		clearActiveLinks();
-	// 		activateLink(e);
-
-	// 		// Hide other contents
-	// 		clearActiveDivs();
-
-	// 		// Show current content
-	// 		activateDiv('#experienceContent');
-	// 	}
-	// });
-
 	$('#experience').click(function(e) {
+
 		// If the div has already the class active, no need to reload the divs...
 		if(!$(e.target).hasClass('active')) {
 			// Update navbar
 			clearActiveLinks();
 			activateLink(e);
-	
+
 			// Hide other contents
 			clearActiveDivs();
-	
+
 			// Show current content
-			$('#experienceSection').show(); // Display the section when clicked
+			activateDiv('#experienceContent');
 		}
 	});
 
