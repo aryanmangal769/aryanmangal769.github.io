@@ -153,6 +153,23 @@ $(document).ready(function(){
 		}
 	});
 
+
+	// Handle 'Experience' content
+	$('#experienceLink').click(function(e) {
+		// Prevent default behavior
+		e.preventDefault();
+		
+		// Update navbar
+		clearActiveLinks();
+		activateLink($('#experience'));
+
+		// Hide other contents
+		clearActiveDivs();
+
+		// Show current content
+		activateDiv('#experienceContent');
+	});
+
 	// Handle 'Projects' content
 	$('#project').click(function(e) {
 
