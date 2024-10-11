@@ -154,20 +154,18 @@ $(document).ready(function(){
 	});
 
 
-	// Handle 'Experience' content
-	$('#experienceLink').click(function(e) {
-		// Prevent default behavior
-		e.preventDefault();
-		
-		// Update navbar
-		clearActiveLinks();
-		activateLink($('#experience'));
-
-		// Hide other contents
-		clearActiveDivs();
-
+	document.getElementById('experienceLink').addEventListener('click', function(e) {
+		e.preventDefault(); // Prevent default behavior
+	
+		// Update navbar - make sure to get the correct element
+		clearActiveLinks(); // Ensure this function is defined correctly
+		activateLink(document.getElementById('experience')); // Change to vanilla JavaScript
+	
+		// Hide other content
+		clearActiveDivs(); // Ensure this function is defined correctly
+	
 		// Show current content
-		activateDiv('#experienceContent');
+		showContent('experienceContent');
 	});
 
 	// Handle 'Projects' content
