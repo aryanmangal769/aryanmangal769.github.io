@@ -165,7 +165,7 @@ $(document).ready(function(){
 		clearActiveDivs(); // Ensure this function is defined correctly
 	
 		// Show current content
-		showContent('experienceContent');
+		activateDiv('#experienceContent');
 	});
 
 	// Handle 'Projects' content
