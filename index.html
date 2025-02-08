@@ -554,76 +554,130 @@
 				
 				
 
-
-				<!-- Publications -->
+				<!-- Publications Section -->
+				<style>
+					/* Publication Section Styles */
+					.pub-year-h2 {
+					color: #9ecfff; /* Blue accent for years */
+					border-bottom: 2px solid #9ecfff;
+					padding-bottom: 5px;
+					margin-bottom: 20px;
+					}
+					.pub-block {
+					background-color: #3b3b3b; /* Dark background */
+					color: #f2f2f2;            /* Light text */
+					border-radius: 10px;
+					padding: 15px;
+					margin-bottom: 20px;
+					box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+					transition: transform 0.2s ease-in-out;
+					}
+					.pub-block:hover {
+					transform: translateY(-5px);
+					}
+					.pub-authors {
+					margin-top: 10px;
+					}
+					.pub-author {
+					font-weight: bold;
+					}
+					.pub-congress {
+					margin-top: 10px;
+					}
+					.pub-block a {
+					color: #9ecfff;
+					text-decoration: none;
+					}
+					.pub-block a:hover {
+					color: #c0e4ff;
+					}
+				</style>
+				
 				<div class="col-md-8 offset-md-1 mb-5" id="publicationsContent">
 					<div class="container">
-				
-						<!-- 2024 Publications -->
-						<div class="row mt-3">
-							<h2 class="pub-year-h2">2024</h2>
-				
-							<div class="pub-block">
-								<div class="lucida-console h5">AirLoc: Object Based Indoor Relocalization</div>
-								<div class="pub-authors mt-1"><span class="pub-author">Aryan</span>, Bowen Li, Sebastian Scherer, Chen Wang</div>
-								<div class="pub-congress">Submitted to IEEE Robotics and Automation Letters (Under Review)</div>
-							</div>
-				
-							<div class="pub-block">
-								<div class="lucida-console h5">PyPose: A Library for Robot Learning with Physics-based Optimization</div>
-								<div class="pub-authors mt-1"><span class="pub-author">Chen Wang</span>, Dasong Gao, Kuan Xu, Junyi Geng, Yaoyu Hu, Yuheng Qiu, Bowen Li, Fan Yang, Brady Moon, Abhinav Pandey, Aryan, et al.</div>
-								<div class="pub-congress">Submitted to IEEE / CVF Computer Vision and Pattern Recognition Conference (CVPR) (Under Review)</div>
-								<div class="mt-1">
-									<span> <i class="far fa-file-pdf"></i> <a href="https://arxiv.org/abs/2209.15428" target="_blank" class="link-dark ">Link</a> </span>
-								</div>
-							</div>
+					
+					<!-- 2024 Publications -->
+					<div class="row mt-3">
+						<h2 class="pub-year-h2">2024</h2>
+						
+						<div class="pub-block">
+						<div class="lucida-console h5">AirLoc: Object Based Indoor Relocalization</div>
+						<div class="pub-authors mt-1"><span class="pub-author">Aryan</span>, Bowen Li, Sebastian Scherer, Chen Wang</div>
+						<div class="pub-congress">Submitted to IEEE Robotics and Automation Letters (Under Review)</div>
 						</div>
-				
-						<!-- 2023 Publications -->
-						<div class="row mt-3">
-							<h2 class="pub-year-h2">2023</h2>
-				
-							<div class="pub-block">
-								<div class="lucida-console h5">Grad-Lidar-SLAM: Fully Differentiable Global SLAM for Lidar with Pose-Graph Optimization</div>
-								<div class="pub-authors mt-1"><span class="pub-author">Aryan</span>, Dheeraj Vattikonda, Erqun Dong, Sabyasachi Sahoo</div>
-								<div class="pub-congress">In IROS 2022 Workshop Probabilistic Robotics in the Age of Deep Learning</div>
-								<div class="mt-1">
-									<span> <i class="far fa-file-pdf"></i> <a href="https://openreview.net/forum?id=tvPtqbjsKgX" target="_blank" class="link-dark ">Link</a> </span>
-								</div>
-							</div>
-				
-							<div class="pub-block">
-								<div class="lucida-console h5">HRV and GSR as Viable Physiological Markers for Mental Health Recognition</div>
-								<div class="pub-authors mt-1"><span class="pub-author">Sikha</span>, Aryan, Lovish Arya, Divyasikha Sethia</div>
-								<div class="pub-congress">In 2022 14th International Conference on Communication Systems and Networks (COMSNETS)</div>
-								<div class="mt-1">
-									<span> <i class="far fa-file-pdf"></i> <a href="https://ieeexplore.ieee.org/document/9668439" target="_blank" class="link-dark ">Link</a> </span>
-								</div>
-							</div>
-				
-							<div class="pub-block">
-								<div class="lucida-console h5">Realization of Low-Cost Footwear Integrated Step-Counting Device for Health Monitoring System</div>
-								<div class="pub-authors mt-1"><span class="pub-author">Aryan</span>, Poornima Mittal</div>
-								<div class="pub-congress">In Journal of Physics: Conference Series (ISSN: 1742-6596)</div>
-								<div class="mt-1">
-									<span> <i class="far fa-file-pdf"></i> <a href="https://iopscience.iop.org/article/10.1088/1742-6596/1998/1/012006" target="_blank" class="link-dark ">Link</a> </span>
-								</div>
-							</div>
+						
+						<div class="pub-block">
+						<div class="lucida-console h5">PyPose: A Library for Robot Learning with Physics-based Optimization</div>
+						<div class="pub-authors mt-1">
+							<span class="pub-author">Chen Wang</span>, Dasong Gao, Kuan Xu, Junyi Geng, Yaoyu Hu, Yuheng Qiu, Bowen Li, Fan Yang, Brady Moon, Abhinav Pandey, Aryan, et al.
 						</div>
-				
-						<!-- 2022 Publications -->
-						<div class="row mt-3">
-							<h2 class="pub-year-h2">2022</h2>
-				
-							<div class="pub-block">
-								<div class="lucida-console h5">Thermal Study of MOSFET heat sinks for Motor Controller in Neighborhood Electric Vehicles (NEV)</div>
-								<div class="pub-authors mt-1"><span class="pub-author">Kshitij Tripathi</span>, Aryan, Aakash Ghosh, Mini Sreejeth, S. Indu</div>
-								<div class="pub-congress">(Under Review)</div>
-							</div>
+						<div class="pub-congress">
+							Submitted to IEEE / CVF Computer Vision and Pattern Recognition Conference (CVPR) (Under Review)
 						</div>
-				
+						<div class="mt-1">
+							<span>
+							<i class="far fa-file-pdf"></i>
+							<a href="https://arxiv.org/abs/2209.15428" target="_blank" class="link-dark">Link</a>
+							</span>
+						</div>
+						</div>
+					</div>
+					
+					<!-- 2023 Publications -->
+					<div class="row mt-3">
+						<h2 class="pub-year-h2">2023</h2>
+						
+						<div class="pub-block">
+						<div class="lucida-console h5">Grad-Lidar-SLAM: Fully Differentiable Global SLAM for Lidar with Pose-Graph Optimization</div>
+						<div class="pub-authors mt-1"><span class="pub-author">Aryan</span>, Dheeraj Vattikonda, Erqun Dong, Sabyasachi Sahoo</div>
+						<div class="pub-congress">In IROS 2022 Workshop Probabilistic Robotics in the Age of Deep Learning</div>
+						<div class="mt-1">
+							<span>
+							<i class="far fa-file-pdf"></i>
+							<a href="https://openreview.net/forum?id=tvPtqbjsKgX" target="_blank" class="link-dark">Link</a>
+							</span>
+						</div>
+						</div>
+						
+						<div class="pub-block">
+						<div class="lucida-console h5">HRV and GSR as Viable Physiological Markers for Mental Health Recognition</div>
+						<div class="pub-authors mt-1"><span class="pub-author">Sikha</span>, Aryan, Lovish Arya, Divyasikha Sethia</div>
+						<div class="pub-congress">In 2022 14th International Conference on Communication Systems and Networks (COMSNETS)</div>
+						<div class="mt-1">
+							<span>
+							<i class="far fa-file-pdf"></i>
+							<a href="https://ieeexplore.ieee.org/document/9668439" target="_blank" class="link-dark">Link</a>
+							</span>
+						</div>
+						</div>
+						
+						<div class="pub-block">
+						<div class="lucida-console h5">Realization of Low-Cost Footwear Integrated Step-Counting Device for Health Monitoring System</div>
+						<div class="pub-authors mt-1"><span class="pub-author">Aryan</span>, Poornima Mittal</div>
+						<div class="pub-congress">In Journal of Physics: Conference Series (ISSN: 1742-6596)</div>
+						<div class="mt-1">
+							<span>
+							<i class="far fa-file-pdf"></i>
+							<a href="https://iopscience.iop.org/article/10.1088/1742-6596/1998/1/012006" target="_blank" class="link-dark">Link</a>
+							</span>
+						</div>
+						</div>
+					</div>
+					
+					<!-- 2022 Publications -->
+					<div class="row mt-3">
+						<h2 class="pub-year-h2">2022</h2>
+						
+						<div class="pub-block">
+						<div class="lucida-console h5">Thermal Study of MOSFET heat sinks for Motor Controller in Neighborhood Electric Vehicles (NEV)</div>
+						<div class="pub-authors mt-1"><span class="pub-author">Kshitij Tripathi</span>, Aryan, Aakash Ghosh, Mini Sreejeth, S. Indu</div>
+						<div class="pub-congress">(Under Review)</div>
+						</div>
+					</div>
+					
 					</div>
 				</div>
+				
 				
 
 				<!-- Projects -->
