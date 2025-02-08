@@ -439,118 +439,102 @@
 				</div>
 
 
-				<!-- Experience -->
-				<!-- <div class="col-md-8 offset-md-1 mb-5" id="experienceContent">
-					<div class="container">
+				<!-- Experience Section Styles -->
+				<style>
+					/* Experience section cards */
+					.experience-section {
+					background-color: #3b3b3b; /* Dark background */
+					color: #f2f2f2;            /* Light text */
+					border-radius: 10px;
+					padding: 20px;
+					margin-bottom: 20px;
+					box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+					transition: transform 0.2s ease-in-out;
+					}
+					.experience-section:hover {
+					transform: translateY(-5px);
+					}
+					/* Experience title styling */
+					.experience-title {
+					color: #f2f2f2;
+					border-bottom: 2px solid #9ecfff; /* Blue accent border */
+					padding-bottom: 5px;
+					margin-bottom: 10px;
+					}
+					/* Date styling */
+					.experience-date {
+					color: #9ecfff; /* Blue accent for dates */
+					font-size: 0.95rem;
+					margin-bottom: 10px;
+					}
+					/* Link styling within experience */
+					.experience-section a {
+					color: #9ecfff;
+					text-decoration: none;
+					}
+					.experience-section a:hover {
+					color: #c0e4ff;
+					}
+				</style>
 				
-						<div class="row mt-3">
-							<h2 class="experience-title">Robotics Institute Summer Scholarship, CMU</h2>
-							<div class="trnsf-thin">(May 2022 - Present, Pittsburgh, USA)</div>
-							<p class="mt-1 justify">
-								Developed <strong>AirLoc</strong>, a simple yet effective indoor relocalization approach that utilizes both geometric and semantic information of a scene by using objects to perform relocalization.
-							</p>
-							<ul>
-								<li>Outperformed state-of-the-art methods in room-level relocalization.</li>
-								<li>Supervisor: <strong>Prof. Sebastian Scherer</strong> <a href="https://www.ri.cmu.edu/ri-faculty/sebastian-scherer/" class="link-dark" target="_blank"> (Personal Webpage)</a></li>
-							</ul>
-						</div>
-				
-						<div class="row mt-3">
-							<h2 class="experience-title">Carnegie Mellon University - Pypose Project</h2>
-							<div class="trnsf-thin">(Dec 2021 - May 2022, Pittsburgh, USA)</div>
-							<p class="mt-1 justify">
-								Worked on developing a first-of-its-kind differentiable IMU preintegrator and added bias correction and covariance propagation to the base IMU preintegrator for PyPose, a library connecting classical learning with modern methods.
-							</p>
-							<ul>
-								<li>Supervisor: <strong>Prof. Sebastian Scherer</strong> <a href="https://www.ri.cmu.edu/ri-faculty/sebastian-scherer/" class="link-dark" target="_blank"> (Personal Webpage)</a></li>
-							</ul>
-						</div>
-				
-						<div class="row mt-3">
-							<h2 class="experience-title">International Institute of Information Technology, Hyderabad</h2>
-							<div class="trnsf-thin">(May 2021 - Dec 2021, Hyderabad, India)</div>
-							<p class="mt-1 justify">
-								Worked on a novel approach for place-recognition using Scene-Graphs and deep-learning techniques for room-level and metric-level localization.
-							</p>
-							<ul>
-								<li>Extracted baseline accuracy from existing techniques like NetVlad, Scan Matching, and DeLG.</li>
-								<li>Supervisor: <strong>Dr. K. Madhava Krishna</strong> <a href="https://www.iiit.ac.in/people/faculty/mkrishna/" class="link-dark" target="_blank"> (Personal Webpage)</a></li>
-							</ul>
-						</div>
-				
-						<div class="row mt-3">
-							<h2 class="experience-title">Samsung Digital Academy Research Lab, DTU</h2>
-							<div class="trnsf-thin">(May 2021 - Present, New Delhi, India)</div>
-							<p class="mt-1 justify">
-								Developed a stress prediction system based on Electrocardiogram (ECG) and Heart Rate Variability (HRV) data, determining optimal HRV features for cumulative stress monitoring.
-							</p>
-							<ul>
-								<li>Tested various machine learning and deep learning algorithms to improve accuracy over baselines.</li>
-								<li>Supervisor: <strong>Dr. Divyashikha Sethia</strong> <a href="http://people.dtu.ac.in/faculty/view.php?uname=divyashikhas" class="link-dark" target="_blank"> (Personal Webpage)</a></li>
-							</ul>
-						</div>
-				
-					</div>
-				</div> -->
-
-
 				<div class="col-md-8 offset-md-1 mb-5" id="experienceContent">
 					<div class="container">
-						<h1 class="text-center mb-5">Professional Experience</h1>
+					<h1 class="text-center mb-5">Professional Experience</h1>
 				
-						<!-- Robotics Institute Summer Scholarship, CMU -->
-						<div class="row mt-4 experience-section">
-							<h2 class="experience-title pb-2" style="border-bottom: 2px solid #f0f0f0;">Robotics Institute Summer Scholarship, CMU</h2>
-							<div class="experience-date">(May 2022 - Present, Pittsburgh, USA)</div>
-							<p class="mt-1 justify">
-								Developed <strong>AirLoc</strong>, a simple yet effective indoor relocalization approach that utilizes both geometric and semantic information of a scene by using objects to perform relocalization.
-							</p>
-							<ul>
-								<li>Outperformed state-of-the-art methods in room-level relocalization.</li>
-								<li>Supervisor: <strong>Prof. Sebastian Scherer</strong> <a href="https://www.ri.cmu.edu/ri-faculty/sebastian-scherer/" class="link-dark" target="_blank"> (Personal Webpage)</a></li>
-							</ul>
-						</div>
+					<!-- Robotics Institute Summer Scholarship, CMU -->
+					<div class="experience-section">
+						<h2 class="experience-title">Robotics Institute Summer Scholarship, CMU</h2>
+						<div class="experience-date">(May 2022 - Present, Pittsburgh, USA)</div>
+						<p class="mt-1 justify">
+						Developed <strong>AirLoc</strong>, a simple yet effective indoor relocalization approach that utilizes both geometric and semantic information of a scene by using objects to perform relocalization.
+						</p>
+						<ul>
+						<li>Outperformed state-of-the-art methods in room-level relocalization.</li>
+						<li>Supervisor: <strong>Prof. Sebastian Scherer</strong> <a href="https://www.ri.cmu.edu/ri-faculty/sebastian-scherer/" target="_blank">(Personal Webpage)</a></li>
+						</ul>
+					</div>
 				
-						<!-- Carnegie Mellon University - Pypose Project -->
-						<div class="row mt-4 experience-section">
-							<h2 class="experience-title pb-2" style="border-bottom: 2px solid #f0f0f0;">Carnegie Mellon University - Pypose Project</h2>
-							<div class="experience-date">(Dec 2021 - May 2022, Pittsburgh, USA)</div>
-							<p class="mt-1 justify">
-								Worked on developing a first-of-its-kind differentiable IMU preintegrator and added bias correction and covariance propagation to the base IMU preintegrator for PyPose, a library connecting classical learning with modern methods.
-							</p>
-							<ul>
-								<li>Supervisor: <strong>Prof. Sebastian Scherer</strong> <a href="https://www.ri.cmu.edu/ri-faculty/sebastian-scherer/" class="link-dark" target="_blank"> (Personal Webpage)</a></li>
-							</ul>
-						</div>
+					<!-- Carnegie Mellon University - Pypose Project -->
+					<div class="experience-section">
+						<h2 class="experience-title">Carnegie Mellon University - Pypose Project</h2>
+						<div class="experience-date">(Dec 2021 - May 2022, Pittsburgh, USA)</div>
+						<p class="mt-1 justify">
+						Worked on developing a first-of-its-kind differentiable IMU preintegrator and added bias correction and covariance propagation to the base IMU preintegrator for PyPose, a library connecting classical learning with modern methods.
+						</p>
+						<ul>
+						<li>Supervisor: <strong>Prof. Sebastian Scherer</strong> <a href="https://www.ri.cmu.edu/ri-faculty/sebastian-scherer/" target="_blank">(Personal Webpage)</a></li>
+						</ul>
+					</div>
 				
-						<!-- International Institute of Information Technology, Hyderabad -->
-						<div class="row mt-4 experience-section">
-							<h2 class="experience-title pb-2" style="border-bottom: 2px solid #f0f0f0;">International Institute of Information Technology, Hyderabad</h2>
-							<div class="experience-date">(May 2021 - Dec 2021, Hyderabad, India)</div>
-							<p class="mt-1 justify">
-								Worked on a novel approach for place-recognition using Scene-Graphs and deep-learning techniques for room-level and metric-level localization.
-							</p>
-							<ul>
-								<li>Extracted baseline accuracy from existing techniques like NetVlad, Scan Matching, and DeLG.</li>
-								<li>Supervisor: <strong>Dr. K. Madhava Krishna</strong> <a href="https://www.iiit.ac.in/people/faculty/mkrishna/" class="link-dark" target="_blank"> (Personal Webpage)</a></li>
-							</ul>
-						</div>
+					<!-- International Institute of Information Technology, Hyderabad -->
+					<div class="experience-section">
+						<h2 class="experience-title">International Institute of Information Technology, Hyderabad</h2>
+						<div class="experience-date">(May 2021 - Dec 2021, Hyderabad, India)</div>
+						<p class="mt-1 justify">
+						Worked on a novel approach for place-recognition using Scene-Graphs and deep-learning techniques for room-level and metric-level localization.
+						</p>
+						<ul>
+						<li>Extracted baseline accuracy from existing techniques like NetVlad, Scan Matching, and DeLG.</li>
+						<li>Supervisor: <strong>Dr. K. Madhava Krishna</strong> <a href="https://www.iiit.ac.in/people/faculty/mkrishna/" target="_blank">(Personal Webpage)</a></li>
+						</ul>
+					</div>
 				
-						<!-- Samsung Digital Academy Research Lab, DTU -->
-						<div class="row mt-4 experience-section">
-							<h2 class="experience-title pb-2" style="border-bottom: 2px solid #f0f0f0;">Samsung Digital Academy Research Lab, DTU</h2>
-							<div class="experience-date">(May 2021 - Present, New Delhi, India)</div>
-							<p class="mt-1 justify">
-								Developed a stress prediction system based on Electrocardiogram (ECG) and Heart Rate Variability (HRV) data, determining optimal HRV features for cumulative stress monitoring.
-							</p>
-							<ul>
-								<li>Tested various machine learning and deep learning algorithms to improve accuracy over baselines.</li>
-								<li>Supervisor: <strong>Dr. Divyashikha Sethia</strong> <a href="http://people.dtu.ac.in/faculty/view.php?uname=divyashikhas" class="link-dark" target="_blank"> (Personal Webpage)</a></li>
-							</ul>
-						</div>
+					<!-- Samsung Digital Academy Research Lab, DTU -->
+					<div class="experience-section">
+						<h2 class="experience-title">Samsung Digital Academy Research Lab, DTU</h2>
+						<div class="experience-date">(May 2021 - Present, New Delhi, India)</div>
+						<p class="mt-1 justify">
+						Developed a stress prediction system based on Electrocardiogram (ECG) and Heart Rate Variability (HRV) data, determining optimal HRV features for cumulative stress monitoring.
+						</p>
+						<ul>
+						<li>Tested various machine learning and deep learning algorithms to improve accuracy over baselines.</li>
+						<li>Supervisor: <strong>Dr. Divyashikha Sethia</strong> <a href="http://people.dtu.ac.in/faculty/view.php?uname=divyashikhas" target="_blank">(Personal Webpage)</a></li>
+						</ul>
+					</div>
 				
 					</div>
 				</div>
+				
 				
 				
 
@@ -612,7 +596,7 @@
 							<span class="pub-author">Chen Wang</span>, Dasong Gao, Kuan Xu, Junyi Geng, Yaoyu Hu, Yuheng Qiu, Bowen Li, Fan Yang, Brady Moon, Abhinav Pandey, Aryan, et al.
 						</div>
 						<div class="pub-congress">
-							Submitted to IEEE / CVF Computer Vision and Pattern Recognition Conference (CVPR) (Under Review)
+							Submitted to IEEE / CVF Computer Vision and Pattern Recognition Conference (CVPR)
 						</div>
 						<div class="mt-1">
 							<span>
