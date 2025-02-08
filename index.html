@@ -724,12 +724,35 @@
 					</div>
 				</div> -->
 
-				<!-- Projects Section -->
+				<!-- Modified Projects Section with Dark Theme -->
+				<style>
+					/* Dark themed project cards */
+					.project-card {
+					background-color: #3b3b3b; /* Dark background */
+					color: #f2f2f2;            /* Light text */
+					border: none;
+					border-radius: 10px;
+					box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+					transition: transform 0.2s ease-in-out;
+					margin-bottom: 20px;
+					}
+					.project-card:hover {
+					transform: translateY(-5px);
+					}
+					.project-card a {
+					color: #9ecfff;
+					text-decoration: none;
+					}
+					.project-card a:hover {
+					color: #c0e4ff;
+					}
+				</style>
+				
 				<div class="col-md-8 offset-md-1 mb-5" id="projectContent">
 					<div class="container">
-				
+					
 					<!-- Self-Supervised Flare Removal -->
-					<div class="card mb-4 shadow-sm project-card">
+					<div class="card project-card">
 						<div class="card-body">
 						<h2 class="card-title">Self-Supervised Flare Removal from Images</h2>
 						<h6 class="card-subtitle mb-2 text-muted">(August 2021 - Present, DTU, New Delhi, India)</h6>
@@ -743,7 +766,7 @@
 					</div>
 				
 					<!-- Legal Document Summarization with Fine-tuned LLM and RAG Pipeline Code -->
-					<div class="card mb-4 shadow-sm project-card">
+					<div class="card project-card">
 						<div class="card-body">
 						<h2 class="card-title">Legal Document Summarization with Fine-tuned LLM and RAG Pipeline Code</h2>
 						<h6 class="card-subtitle mb-2 text-muted">(Month Year - Month Year, Institution/Organization, Location)</h6>
@@ -758,7 +781,7 @@
 					</div>
 				
 					<!-- Griffin - Unmanned Ground Vehicle -->
-					<div class="card mb-4 shadow-sm project-card">
+					<div class="card project-card">
 						<div class="card-body">
 						<h2 class="card-title">Griffin - Unmanned Ground Vehicle</h2>
 						<h6 class="card-subtitle mb-2 text-muted">(August 2019 - August 2021, DTU, New Delhi, India)</h6>
@@ -773,9 +796,9 @@
 						</ul>
 						</div>
 					</div>
-				
+					
 					<!-- Study of Neural Network Implementation on FPGAs -->
-					<div class="card mb-4 shadow-sm project-card">
+					<div class="card project-card">
 						<div class="card-body">
 						<h2 class="card-title">Study of Neural Network Implementation on FPGAs</h2>
 						<h6 class="card-subtitle mb-2 text-muted">(Jan 2021 - May 2021, DTU, New Delhi, India)</h6>
@@ -784,9 +807,9 @@
 						</p>
 						</div>
 					</div>
-				
+					
 					<!-- Micro-Mouse Challenge -->
-					<div class="card mb-4 shadow-sm project-card">
+					<div class="card project-card">
 						<div class="card-body">
 						<h2 class="card-title">Micro-Mouse Challenge</h2>
 						<h6 class="card-subtitle mb-2 text-muted">(December 2020, IIT Bombay TechFest)</h6>
@@ -799,9 +822,9 @@
 						</ul>
 						</div>
 					</div>
-				
+					
 					<!-- Line Follower Minidrone -->
-					<div class="card mb-4 shadow-sm project-card">
+					<div class="card project-card">
 						<div class="card-body">
 						<h2 class="card-title">Line Follower Minidrone</h2>
 						<h6 class="card-subtitle mb-2 text-muted">(April 2021 - June 2021, MATLAB Minidrone Competition)</h6>
@@ -813,9 +836,9 @@
 						</ul>
 						</div>
 					</div>
-				
+					
 					<!-- Localization Package for UAV -->
-					<div class="card mb-4 shadow-sm project-card">
+					<div class="card project-card">
 						<div class="card-body">
 						<h2 class="card-title">Localization Package for Unmanned Aerial Vehicle</h2>
 						<h6 class="card-subtitle mb-2 text-muted">(April 2021 - July 2021, India)</h6>
@@ -827,9 +850,9 @@
 						</ul>
 						</div>
 					</div>
-				
+					
 					<!-- Ministry of Electronics and Information Technology Sponsored R&D Project -->
-					<div class="card mb-4 shadow-sm project-card">
+					<div class="card project-card">
 						<div class="card-body">
 						<h2 class="card-title">Ministry of Electronics and Information Technology Sponsored R&D Project</h2>
 						<h6 class="card-subtitle mb-2 text-muted">(Jan 2021 - July 2021, India)</h6>
@@ -841,30 +864,9 @@
 						</ul>
 						</div>
 					</div>
-				
+					
 					</div>
 				</div>
-				
-				<!-- Optional Custom CSS for Extra Styling -->
-				<style>
-					/* Add a subtle hover effect on cards */
-					.project-card {
-					border: none;
-					border-radius: 10px;
-					transition: transform 0.2s ease-in-out;
-					}
-					.project-card:hover {
-					transform: translateY(-5px);
-					}
-					.card-title {
-					font-family: 'Roboto', sans-serif;
-					font-weight: 700;
-					}
-					.card-text {
-					font-size: 1rem;
-					line-height: 1.6;
-					}
-				</style>
   
 
 
