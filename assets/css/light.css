@@ -1,7 +1,15 @@
 :root {
-	--t-color: #000;
-
-	--bg-color: #fff;
+	--t-color: #333;
+	--h-color: #333;
+	--bg-color: #fafafa;
+	--nv-color: rgba(255, 255, 255, 0.95);
+	--border-color: #e0e0e0;
+	--muted-color: #666;
+	--hover-color: #f09228;
+	--link-color: #1772d0;
+	--highlight-bg: #ffffd0;
+	--table-bg: #ffffff;
+	--nav-hover: #f0f0f0;
 }
 
 body {
@@ -10,62 +18,73 @@ body {
 }
 
 h1, h2, h3, h4, b {
-	color: var(--t-color) !important;
+	color: var(--h-color) !important;
 }
 
 #top-nav {
-	background-color:rgb(248, 249, 250) !important;
+	background-color: var(--nv-color) !important;
+	border-bottom: 1px solid var(--border-color);
+	backdrop-filter: blur(10px);
 }
 
 .nav-link {
-	color: rgba(0, 0, 0, 0.9) !important;
+	color: var(--t-color) !important;
 }
 
-.nav-link:hover{
-	color: rgba(0, 0, 0, 0.7) !important;
+.nav-link:hover {
+	color: var(--t-color) !important;
+	background-color: var(--nav-hover);
 }
 
-.t-secondary { 
-	color: rgb(108,117,125);
+.nav-link.active {
+	color: var(--link-color) !important;
+	text-decoration: none !important;
+	font-weight: 700 !important;
 }
 
+.t-secondary {
+	color: var(--muted-color);
+}
+
+a:not(.nav-link),
 .link-dark {
-	color: #212529 !important;
+	color: var(--link-color) !important;
 }
 
+a:not(.nav-link):hover,
 .link-dark:hover {
-	color: #1c1e20 !important;
+	color: var(--hover-color) !important;
+	opacity: 1;
 }
 
 /* OPTION BUTTON */
 .options-button {
-	background-color: var(--bg-color);
-	border: 1px solid #000;
+	background-color: var(--table-bg);
+	border: 1px solid var(--border-color);
+	box-shadow: none;
+	color: var(--t-color);
 }
 
 #options-toggler {
-	box-shadow: 0px 3px 50px rgba(0,0,0,0.2);
+	box-shadow: none;
 }
 
-#options-toggler:hover {
-	box-shadow: 0px 3px 50px rgba(0,0,0,0.3);
-}
-
-#theme:hover, #lan:hover {
-	background-color: #d3d3d3;
+#options-toggler:hover,
+#theme:hover,
+#lan:hover {
+	background-color: var(--nav-hover);
 }
 
 /* BLOG - Related */
-
 .blog-short {
-	color: #717378;
+	color: var(--muted-color);
 }
 
 /* TEACHING RELATED */
 .academic-name {
-	color: #22517d;
+	color: var(--link-color);
 }
 
 .academic-block {
-	border-left: 2px #22517d solid;
+	border-left: 3px solid var(--link-color);
 }

@@ -1,14 +1,20 @@
 :root {
-	--t-color: #D8DEE9;
-	--h-color: #ffff;
-
-	--bg-color: #383838;
-	--nv-color: #121212;
+	--t-color: #ffffff;
+	--h-color: #ffffff;
+	--bg-color: #1a1a1a;
+	--nv-color: rgba(26, 26, 26, 0.95);
+	--border-color: #404040;
+	--muted-color: #b0b0b0;
+	--hover-color: #f09228;
+	--link-color: #66b3ff;
+	--highlight-bg: #2d2d2d;
+	--table-bg: #2d2d2d;
+	--nav-hover: #404040;
 }
 
 body {
 	background-color: var(--bg-color);
-	color: var(--t-color)
+	color: var(--t-color);
 }
 
 h1, h2, h3, h4, b {
@@ -17,63 +23,168 @@ h1, h2, h3, h4, b {
 
 #top-nav {
 	background-color: var(--nv-color) !important;
+	border-bottom: 1px solid var(--border-color);
+	backdrop-filter: blur(10px);
 }
 
 .nav-link {
-	color: rgba(255, 255, 255, 0.9) !important;
+	color: var(--t-color) !important;
 }
 
-.nav-link:hover{
-	color: rgba(255, 255, 255, 0.7) !important;
+.nav-link:hover {
+	color: var(--t-color) !important;
+	background-color: var(--nav-hover);
 }
 
+.nav-link.active {
+	color: var(--link-color) !important;
+	text-decoration: none !important;
+	font-weight: 700 !important;
+}
+
+.t-secondary {
+	color: var(--muted-color);
+}
+
+a:not(.nav-link),
 .link-dark {
-	color: var(--h-color) !important;
+	color: var(--link-color) !important;
 }
 
-.link-dark:hover, .link-dark:focus {
-	color: #DBDBDB !important;
+a:not(.nav-link):hover,
+.link-dark:hover,
+.link-dark:focus {
+	color: var(--hover-color) !important;
+	opacity: 1;
 }
 
 .navbar-toggler-icon {
-	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.85%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-toggler {
+	border-color: var(--border-color);
 }
 
 .navbar-toggler:focus {
-	box-shadow: 0px 0px 4px rgba(255, 255, 255, 0.7) !important;
+	box-shadow: none !important;
 }
 
 /* OPTION BUTTON */
 .options-button {
-	background-color: var(--bs-gray-700);
-	border: 1px solid #fff;
+	background-color: var(--table-bg);
+	border: 1px solid var(--border-color);
+	box-shadow: none;
+	color: var(--t-color);
 }
 
 #options-toggler {
-	box-shadow: 0px 3px 50px rgba(0,0,0,0.2);
+	box-shadow: none;
 }
 
-#options-toggler:hover {
-	box-shadow: 0px 3px 50px rgba(0,0,0,0.3);
+#options-toggler:hover,
+#theme:hover,
+#lan:hover {
+	background-color: var(--nav-hover);
 }
 
-#theme:hover, #lan:hover {
-	background-color: var(--bg-color);
-}
-
-/* TEACHING RELATED */
 .academic-name {
-	color: #0dcaf0;
+	color: var(--link-color);
 }
 
-.academic-block {
-	border-left: 2px #0dcaf0 solid;
-}
-
+.academic-block,
 .student-block {
-	border-left: 2px #00FFC1 solid;
+	border-left: 3px solid var(--link-color);
 }
 
 .student-name {
-	color: #00FFC1;
+	color: var(--h-color);
+}
+
+.pub-block {
+	border-left-color: var(--border-color);
+}
+
+.blog-short {
+	color: var(--muted-color);
+}
+
+.clickable:hover {
+	background-color: rgba(255, 255, 255, 0.06);
+}
+
+.profilepicture,
+.thumbnail img,
+.pub-block,
+#aboutmeContent .news-item,
+h4 {
+	border-color: var(--border-color);
+}
+
+.news-container {
+	background-color: var(--table-bg);
+	border-color: var(--border-color);
+}
+
+.media-entry {
+	background-color: var(--highlight-bg);
+}
+
+.media-placeholder {
+	background: rgba(255, 255, 255, 0.08);
+	border-color: var(--border-color);
+	color: var(--muted-color);
+}
+
+.papertitle {
+	color: var(--h-color);
+}
+
+.exp-scroll {
+	background-color: var(--table-bg);
+	border-color: var(--border-color);
+	box-shadow: none;
+}
+
+.media-entry.exp-entry {
+	border-bottom-color: var(--border-color);
+}
+
+.media-entry.exp-entry .exp-logo img {
+	background: transparent;
+	box-shadow: none;
+}
+
+.exp-bullets {
+	color: var(--t-color);
+}
+
+.research-entry {
+	border-bottom-color: var(--border-color);
+}
+
+.research-media,
+.research-media .media-placeholder {
+	background: rgba(255, 255, 255, 0.06);
+}
+
+.research-media-figure img {
+	background: #111;
+}
+
+.research-body {
+	color: var(--t-color);
+}
+
+.pub-item {
+	border-bottom-color: var(--border-color);
+}
+
+.pub-title,
+.pub-authors {
+	color: var(--t-color);
+}
+
+.pub-venue {
+	color: var(--muted-color);
 }

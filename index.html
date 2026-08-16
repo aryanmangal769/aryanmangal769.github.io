@@ -3,51 +3,91 @@
 
 	<head>
 
-		<!-- Meta tags -->
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-		<meta name="description" content="Aryan's website, biography, education, previous experience and published papers."/>
-		<meta name="keywords" content="aryan, aryan mangal, aryan mangal cmu, fnu aryan cmu, FNU Aryan, FNU Aryan, aryan cmu, aryan mangal dtu, aryan dtu, FNU aryan dtu, aryan mangal cv, FNU aryan cv, aryan cv, aryan resume, FNU aryan resume, aryan mangal resume"/>
-		
-		<meta name="author" content="Aryan" />
-		<meta name="copyright" content="Work protected by copyright; no distribution without permission." />
-		
-		<!-- Title + Icon -->
-		<title>Aryan</title>
-		<link rel="icon" type="image/x-icon" href="assets/documents/imgs/aryan_mangal_icon.png">
+		<title>Aryan Mangal | Machine Learning and Robotics | Woven by Toyota, CMU</title>
+		<meta name="description" content="Aryan Mangal is a machine learning engineer and roboticist at Woven by Toyota, working on driving-behavior foundation models and robot learning. MS in Robotics, Carnegie Mellon University.">
+		<meta name="author" content="Aryan Mangal">
+		<meta name="robots" content="index,follow">
+		<link rel="canonical" href="https://aryanmangal769.github.io/">
 
-		<!-- Improve SEO -->
-		<meta name="robots" content="index,follow" />
+		<meta property="og:type" content="profile">
+		<meta property="og:title" content="Aryan Mangal | Machine Learning and Robotics | Woven by Toyota, CMU">
+		<meta property="og:description" content="Machine learning engineer and roboticist at Woven by Toyota. Foundation models, robot learning, and an MS in Robotics from Carnegie Mellon University.">
+		<meta property="og:url" content="https://aryanmangal769.github.io/">
+		<meta property="og:image" content="https://aryanmangal769.github.io/assets/documents/imgs/og-image.jpg">
+		<meta property="og:image:width" content="1200">
+		<meta property="og:image:height" content="630">
+		<meta property="og:locale" content="en_US">
+		<meta property="profile:first_name" content="Aryan">
+		<meta property="profile:last_name" content="Mangal">
 
-		<!-- Styles -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:creator" content="@aryanmangal769">
+		<meta name="twitter:title" content="Aryan Mangal | Machine Learning and Robotics | Woven by Toyota, CMU">
+		<meta name="twitter:description" content="Machine learning engineer and roboticist at Woven by Toyota. Foundation models, robot learning, and an MS in Robotics from Carnegie Mellon University.">
+		<meta name="twitter:image" content="https://aryanmangal769.github.io/assets/documents/imgs/og-image.jpg">
+
+		<link rel="icon" type="image/png" sizes="32x32" href="assets/documents/imgs/favicon-32.png?v=4">
+		<link rel="icon" type="image/png" sizes="48x48" href="assets/documents/imgs/favicon-48.png?v=4">
+		<link rel="apple-touch-icon" sizes="180x180" href="assets/documents/imgs/apple-touch-icon.png?v=4">
+
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Person",
+			"name": "Aryan Mangal",
+			"url": "https://aryanmangal769.github.io/",
+			"image": "https://aryanmangal769.github.io/assets/documents/imgs/aryan_mangal.jpg",
+			"jobTitle": "Machine Learning Engineer",
+			"knowsAbout": ["Robotics", "Foundation models", "Robot learning", "Machine learning"],
+			"worksFor": {
+				"@type": "Organization",
+				"name": "Woven by Toyota",
+				"url": "https://woven.toyota/"
+			},
+			"alumniOf": [
+				{"@type": "CollegeOrUniversity", "name": "Carnegie Mellon University", "url": "https://www.ri.cmu.edu/"},
+				{"@type": "CollegeOrUniversity", "name": "Delhi Technological University", "url": "http://www.dtu.ac.in/"}
+			],
+			"sameAs": [
+				"https://www.linkedin.com/in/aryan-mangal-40ab0719b/",
+				"https://scholar.google.com/citations?user=vJFkjxcAAAAJ&hl=en",
+				"https://github.com/aryanmangal769",
+				"https://x.com/aryanmangal769"
+			],
+			"email": "mailto:aryanmangal2022@gmail.com"
+		}
+		</script>
+
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap">
 		<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
 		<link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
-		<link rel="stylesheet" href="assets/css/main.css">
+		<link rel="stylesheet" href="assets/css/main.css?v=22">
+		<link rel="stylesheet" href="assets/css/light.css">
+
+		<script>
+			fetch('./assets/js/config.json')
+				.then(response => response.json())
+				.then(config => {
+					const scriptTag = document.createElement('script');
+					scriptTag.async = true;
+					scriptTag.src = `https://www.googletagmanager.com/gtag/js?id=${config.googleAnalyticsMeasurementId}`;
+					document.head.appendChild(scriptTag);
+
+					window.dataLayer = window.dataLayer || [];
+					function gtag(){dataLayer.push(arguments);}
+					gtag('js', new Date());
+					gtag('config', config.googleAnalyticsMeasurementId);
+				})
+				.catch(error => console.error('Error loading the configuration:', error));
+		</script>
 
 	</head>
-
-	<!-- Google tag (gtag.js) & Google Analytics -->
-	<script>
-        fetch('./assets/js/config.json')
-            .then(response => response.json())
-            .then(config => {
-                const scriptTag = document.createElement('script');
-                scriptTag.async = true;
-                scriptTag.src = `https://www.googletagmanager.com/gtag/js?id=${config.googleAnalyticsMeasurementId}`;
-                document.head.appendChild(scriptTag);
-
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-
-                gtag('config', config.googleAnalyticsMeasurementId);
-            })
-            .catch(error => console.error('Error loading the configuration:', error));
-    </script>
 
 	<body>
 
@@ -66,66 +106,30 @@
 				<div class="navbar-collapse collapse flex-grow-1 justify-content-center" id="collapsingNavbar3">
 					<ul class="navbar-nav mx-auto language" id="navbarList">
 						<li class="nav-item">
-							<a class="nav-link active" id="aboutme" href="" 
+							<a class="nav-link active" href="#about"
 								data-es="Sobre Mi" 
-								data-en="About Me">
-							</a>
+								data-en="About">About</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" id="experience" href="#" 
-								data-es="Sobre Mi" 
-								data-en="Experience">
-							</a>
-						</li>
-						<!-- <li class="nav-item">
-							<a class="nav-link" id="education" href="#" 
-								data-es="Educación" 
-								data-en="Education">
-						</a>
-						</li> -->
-						<li class="nav-item">
-							<a class="nav-link" id="publications" href="#" 
-								data-es="Publicaciones" 
-								data-en="Publications">
-						</a>
+							<a class="nav-link" href="#news"
+								data-es="Noticias"
+								data-en="News">News</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" id="project" href="#" 
-								data-es="Projects" 
-								data-en="Projects">
-							</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" id="awards" href="#" 
-								data-es="Enseñanza" 
-								data-en="Honors and Awards">
-							</a>
-						</li>
-						<!-- <li class="nav-item">
-							<a class="nav-link" id="projects" href="#" 
-								data-es="Proyectos" 
-								data-en="Side Projects">
-							</a>
-						</li> -->
-						<!-- <li class="nav-item">
-							<a class="nav-link" id="conferences" href="#" 
-								data-es="Conferencias" 
-								data-en="Conferences">
-							</a>
-						</li> -->
-						<!-- <li class="nav-item">
-							<a class="nav-link" id="experience" href="#" 
+							<a class="nav-link" href="#experience" 
 								data-es="Experiencia" 
-								data-en="Experience">
-							</a>
-						</li>  -->
-						<!-- Example using Photos -->
-						<!-- <li class="nav-item">
-							<a class="nav-link" id="photos" href="#" 
-								data-es="Fotos" 
-								data-en="Photos">
-							</a>
-						</li> -->
+								data-en="Experience">Experience</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#projects" 
+								data-es="Projects" 
+								data-en="Projects">Projects</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#publications" 
+								data-es="Publicaciones" 
+								data-en="Publications">Publications</a>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -134,791 +138,541 @@
 		<div class="container" id="main-content">
 			<div class="row content" id="section-content">
 				
-				<!-- Aryan profile and contact info -->
-				<div id="leftPanel" class="col-md-3 language">
-					<div class="row mb-3">
-						<div class="col">
-							<img src="assets/documents/imgs/aryan_mangal.jpg" class="rounded me-auto d-block img-fluid profilepicture" alt="Aryan profile picture">
-						</div>
-					</div>
-
-					<h3 class="mb-2">Aryan</h3>
-
-					<!-- <p class="mb-4">
-						<span class="t-secondary" data-es="" 
-						data-en="MS in Robotics at Carnegie Mellon University ">.
-					</p> -->
-					
-					<div class="row mb-2">
-						<div class="col-1">
-							<i class="fal fa-map-marker-alt" aria-hidden="true"></i>
-						</div>
-
-						<div class="col-10">
-							<span 
-								data-es="Área Metropolitana" 
-								data-en="Pittsburgh, PA, USA">
-							</span> 
-							<!-- <span 
-								data-es="España" 
-								data-en="USA">
-							</span> -->
-						</div>
-					</div>
-
-					<div class="row mb-2">
-						<div class="col-1">
-							<i class="ai ai-cv" aria-hidden="true"></i>
-						</div>
-
-						<div class="col-10">
-							<a href="assets/documents/aryan_cv.pdf" class="link-dark" target="_blank" data-es="CV [Actualizado 03/2024]" data-en="CV [Updated 07/2024]"></a>
-						</div>
-					</div>
-
-					<div class="row mb-2">
-						<div class="col-1">
-							<i class="fa-regular fa-envelope" aria-hidden="true"></i>
-						</div>
-
-						<div class="col-10">
-							<a href="mailto:aryan2@andrew.cmu.edu" class="link-dark">aryan2@andrew.cmu.edu</a>
-						</div>
-					</div>
-
-					<div class="row mb-2">
-						<div class="col-1">
-							<i class="fa-brands fa-linkedin" aria-hidden="true"></i>
-						</div>
-
-						<div class="col-10">
-							<a href="https://www.linkedin.com/in/aryan-mangal-40ab0719b/" class="link-dark" target="_blank">LinkedIn</a>
-						</div>
-					</div>
-<!-- 
-					<div class="row mb-2">
-						<div class="col-1">
-							<i class="fa-brands fa-twitter" aria-hidden="true"></i>
-						</div>
-
-						<div class="col-10">
-							<a href="https://twitter.com/NicolasMeseguer" class="link-dark" target="_blank">Twitter</a>
-						</div>
-					</div> -->
-
-					<div class="row mb-2">
-						<div class="col-1">
-							<i class="fab fa-github" aria-hidden="true"></i>
-						</div>
-						<div class="col-10">
-							<a href="https://github.com/aryanmangal769" class="link-dark" target="_blank">GitHub</a>
-						</div>
-					</div>
-					
-					<div class="row mb-2">
-						<div class="col-1">
-							<i class="fab fa-google-scholar" aria-hidden="true"></i> <!-- Correct class for Font Awesome 6 -->
-						</div>
-						<div class="col-10">
-							<a href="https://scholar.google.com/citations?user=vJFkjxcAAAAJ&hl=en" class="link-dark" target="_blank">Google Scholar</a>
-						</div>
-					</div>
-					
-
-					<!-- <div class="row mb-2">
-						<div class="col-1">
-							<i class="fa-solid fa-plus"></i>
-						</div>
-
-						<div class="col-10">
-							<a href="https://fseneca.es/tfs/fpi/ficha/8362" class="link-dark" target="_blank"><img class="fseneca" src="/assets/documents/imgs/fseneca-color.svg" alt="Fundación Séneca"></a>
-						</div>
-					</div> -->
-
-					<h4 class="mt-4 mb-2">Recent News</h4>
-					<div class="news-item mb-2">
-						<p><strong>New Paper Submitted:</strong> My latest research SymAnt International Journal of Robotics Research.</p>
-					</div>
-					<!-- <div class="news-item mb-2">
-						<p><strong>Upcoming Conference:</strong> I will be presenting at the Robotics Conference 2024 in June.</p>
-					</div>
-					<div class="news-item mb-2">
-						<p><strong>Internship Opportunity:</strong> Excited to announce my internship at Reality Labs this summer!</p>
-					</div> -->
-				
-				</div> 
-
-				<!-- About Me -->
-				<div class="col-md-8 offset-md-1 mb-5 active" id="aboutmeContent">
-					<div class="container">
-						<div class="row language">
-							<p class="mt-2 justify"> 
-								Hello! I am an MS student in Robotics at <a href="https://www.ri.cmu.edu/" target="_blank">The Robotics Institute</a>, Carnegie Mellon University, advised by  <a href="https://www.cs.cmu.edu/~sycara/" target="_blank">Prof. Katia Sycara</a>.
-							</p>
-								<p class="mt-2 justify">  I have a passion for exploring how human-level symbolic common sense can be integrated into AI agents, particularly in computer vision algorithms. In pursuit of this passion, I aim to develop human-inspired computer vision systems, focusing on Generative AI and perception for autonomous vehicles. As part of my Master’s thesis, I am working on embedding symbolic knowledge through scene and knowledge graphs to enable common sense reasoning for tasks such as compound scene prediction and action anticipation.
+				<!-- About Me (bio first, then sections below) -->
+				<div class="col-12 mb-5" id="aboutmeContent">
+					<section id="about" class="page-section">
+					<div class="bio-header language">
+						<h1 class="bio-name">Aryan Mangal</h1>
+						<div class="row align-items-start g-4">
+							<div class="col-md-8">
+								<p class="mt-2 justify">
+									Hello! I am a Machine Learning Engineer at <a href="https://woven.toyota/" target="_blank">Woven by Toyota</a> in Palo Alto. I currently work on foundation models for driving behavior, with a focus on pretraining and large-scale training and inference optimization. I recently completed my MS in Robotics at <a href="https://www.ri.cmu.edu/" target="_blank">The Robotics Institute</a>, Carnegie Mellon University (GPA 4.08/4), advised by <a href="https://www.cs.cmu.edu/~sycara/" target="_blank">Prof. Katia Sycara</a>. Previously, I worked on human behavior anticipation for effective human–robot collaboration.
 								</p>
-									<p class="mt-2 justify"> I received my Bachelor's degree in Electronics and Communication from <a href="http://www.dtu.ac.in/" target="_blank">Delhi Technological University</a>. During my undergraduate studies, I led the Unmanned Ground Vehicle <a href="https://ugvdtu.com/" target="_blank">Unmaneed Ground Vehicle</a> team at DTU, where we developed an autonomous vehicle from scratch. I was also a <a href="https://riss.ri.cmu.edu/" target="_blank">2022 CMU Robotics Institute Summer Scholar</a>, working with Prof. Sebastian Scherer and Prof. Chen Wang.
-							  </p>
-							  
-							
-							<!-- <h4 id="researchinterestsH4" class="mt-2" 
-								data-es="Áreas de Investigación" 
-								data-en="Research Interests">
-							</h4>
+								<p class="mt-2 justify">
+									I received my B.Tech in Electronics and Communication from <a href="http://www.dtu.ac.in/" target="_blank">Delhi Technological University</a> (GPA 9.5/10). As an undergrad I led the <a href="https://ugvdtu.com/" target="_blank">Unmanned Ground Vehicle</a> team at DTU and was a <a href="https://riss.ri.cmu.edu/" target="_blank">2022 CMU Robotics Institute Summer Scholar</a> with <a href="https://www.ri.cmu.edu/ri-faculty/sebastian-scherer/" target="_blank">Prof. Sebastian Scherer</a> and <a href="https://sairlab.org/chenw/" target="_blank">Prof. Chen Wang</a>.
+								</p>
 
-							<p class="mt-1"
-								data-es="Arquitectura de computadores, redes de interconexión y aceleradores de aprendizaje profundo (aceleradores a nivel de hardware), sin embargo mis estudios de doctorado se centran en arquitecturas de GPUs, concretamente en los nuevos componentes de las futuras generaciones de tarjetas gráficas de NVIDIA y AMD. Para ello actualmente estoy utilizando MGPUSim, un simulador a nivel de eventos para GPUs."
-								data-en="My research interests span from human inspired 2D/3D vision and Generative AI to perception for autonomous vehicles. My current Master's thesis focuses on using symbolic contexts (generated from scene and knowledge graphs) to embed common sense information into black-box neural networks. I am currently working on techniques to initialize diffusion models from a learned context embedding instead of noise. Previously, I have worked on merging scene and knowledge graphs of a scene. Additionally, I have developed a fully functional autonomous ground vehicle from scratch.">
-							</p> -->
+								<p class="bio-location mb-2" style="text-align:center">
+									<span data-es="Palo Alto, CA, USA" data-en="Palo Alto, CA, USA">Palo Alto, CA, USA</span>
+								</p>
 
-							<!-- <h4 id="honors-and-awards" class="mt-2" data-es="Premios y Distinciones" data-en="Honors and Awards"></h4>
-
-							<ul class="mt-1">
-
-								<li class="abme-honors-bullet">
-									<strong> JN Tata Endowment for Higher Education:</strong>, <span data-es="Top 0.1% in a pool of 10000+ applicants" data-en="Top 0.1% in a pool of 10000+ applicants"></span> 
-									- <span data-es="Mar, 2023" data-en="Mar, 2023"></span>
-								</li>
-
-								<li class="abme-honors-bullet mt-2">
-									<strong>Robotics Institute Summer Scholarship</strong>, <span data-es="Formación de Personal Investigador en Universidades y Organismos Públicos de Investigación de la Región de Murcia" data-en="One of the 4 students from India to get selected for the prestigious research Internship at Carnegie Mellon University"></span> 
-									- <span data-es="Dic, 2022" data-en="Mar, 2022"></span>
-								</li>
-
-								<li class="abme-honors-bullet mt-2">
-									<strong>Intelligent Ground Vehicle Competition</strong>, <span data-es="Formación de Personal Investigador en Universidades y Organismos Públicos de Investigación de la Región de Murcia" data-en="Secured 1st position in the Cybersecurity Challange for IGVC competition held at Oakland University in Rochester, Michigan"></span> 
-
-									- <span data-es="Dic, 2022" data-en="Mar, 2022"></span>
-								</li>
-
-								<li class="abme-honors-bullet mt-2">
-									<strong>DAAD WISE Internship</strong>, <span data-es="con un modelo analítico de mercado predictivo" data-en="One of the 80 students from India to get selected for doing research in Germany"></span> 
-									- Mar, 2022
-								</li>
-
-								<li class="abme-honors-bullet mt-2">
-									<strong><span data-es="Beca Universitaria" data-en="Mitacs Globalink Internship"></span></strong> <span data-es="para el máster" data-en="One of the 117 student from India to get selected for doing internship in Canada"></span> (M.S.)
-									- Mar, 2022
-								</li>
-
-								<li class="abme-honors-bullet mt-2">
-									<strong>MATLAB Minidrone Competition</strong>, <span data-es="con una aplicación contra el desperdicio cero de alimentos" data-en="Qualified for the International Finale in MATLAB Minidrone Competition. Our team was one of the top
-									8 teams from all over Europe, Middle East and Asia for Line Following Minidrone."></span>
-									- Oct, 2021
-								</li>
-
-								<li class="abme-honors-bullet mt-2">
-									<strong><span data-es="Premio Extraordinario" data-en="Class of 1959 Scholarship:"></span></strong>, <span data-es="por el mejor Expediente Académico en Ingeniería Informática" data-en="Top 1 student from the University(approx. 14000 students) to be awarded with scholarship on the basis of Merit and Leadership in Science and Technology "></span> (B.S.)
-									- Jun, 2022
-								</li>
-
-								<li class="abme-honors-bullet mt-2">
-									<strong><span data-es="Beca de Iniciación a la Investigación" data-en="Fidelity Charitable Scholarship: "></span></strong> <span data-es="para jóvenes investigadores prometedores" data-en="One of the top 2 students from the University(approx. 14000 students) to be awarded with scholarship on the basis of Merit and Leadership in Science and Technology"></span>
-									[<a href="./assets/documents/NicolasMeseguerResearchGrant.pdf" class="link-dark" target="_blank">1</a>] 
-									- Feb, 2021
-								</li>
-							</ul> -->
-
-							<h4 id="research" class="mt-2">Active Projects</h4>
-
-							<div class="container">
-								<div class="row mt-3">
-									<div class="thumbnail col-md-3">
-										<!-- <img class="rounded mx-auto d-block img-fluid" src="/assets/documents/imgs/hobbies/NicolasMeseguerProgramming.webp" alt="Neurosymbolic Diffusion Models for Action anticipation"> -->
-										<img class="rounded mx-auto d-block img-fluid" src="/assets/documents/imgs/hobbies/teaser_v2.webp" alt="Neurosymbolic Diffusion Models for Action anticipation">
-									</div>
-									<div class="col-md-9" id="hobbie1">
-										<b 
-											data-es="Programación + Mates" 
-											data-en="Probabilistic Multi-agent Action Anticipation">
-										</b>
-
-										<br />
-										<p class="mt-2 d-inline justify"
-											data-es=""
-											data-en="This project focuses on multi-agent action anticipation for human-machine collaboration. By utilizing diffusion models and Knowledge Graphs (KG), we enhance agent interaction understanding and scene dynamics through probabilistic action anticipation.">
-										</p>
-
-										<!-- <a href="https://projecteuler.net/" class="link-dark" target="_blank">Project Euler</a> <span data-es="en mi" data-en="into my"></span> <a href="https://github.com/NicolasMeseguer/Toolbox" class="link-dark" target="_blank"><span data-es="propio repositorio de código abierto" data-en="own open-source repository"></span></a>. -->
-
-									</div>
-								</div>
-
-								<!-- <div class="row mt-5">
-									<div class="thumbnail col-md-3">
-										<img class="rounded mx-auto d-block img-fluid" src="/assets/documents/imgs/hobbies/Multi_graph GSNN Without Sction Anticipation.webp" alt="">
-									</div>
-									<div class="col-md-9" id="hobbie2">
-										<b 
-											data-es="Viajar" 
-											data-en="Symbolic Graph Inference for Compound scene understanding">
-										</b>
-
-										<br />
-										<p class="mt-2 d-inline justify"
-											data-es="Decidí viajar a Alemania para hacer unas prácticas el mismo año que terminé el grado superior. Desde entonces, me he propuesto ir a un lugar nuevo al menos una vez al año. He recorrido Italia, conducido en moto a través de Tailandia (sin embargo, la pandemia me lo ha puesto bastante dificil estos últimos años)."
-											data-en="This project focuses on scene understanding, a fundamental capability needed in many domains, from question-answering to robotics. Unlike recent end-to-end approaches that must explicitly learn varying compositions of the same scene, our method reasons over the constituent objects and analyzes their arrangement to infer a scene’s meaning. We propose a novel approach that reasons over a scene’s scene and knowledge graph, capturing spatial information while utilizing general domain knowledge in a joint graph search. ">
-										</p>
-
-									</div>
-								</div> -->
-<!-- 								
-								<div class="row mt-5">
-									<div class="thumbnail col-md-3">
-										<img class="rounded mx-auto d-block img-fluid" src="/assets/documents/imgs/hobbies/NicolasMeseguerYouTube.webp" alt="Content Creator on YouTube">
-									</div>
-									<div class="col-md-9" id="hobbie3">
-										<b 
-											data-es="Filmaker (casi nunca)" 
-											data-en="Video Creator (rarely)">
-										</b>
-
-										<br />
-										<p class="mt-2 d-inline justify"
-											data-es="Me gusta compartir mis experiencias en el campo de la tecnología. Llevo viendo vídeos en internet desde que tengo uso de razón, así que en 2018 decidí crearme un canal de"
-											data-en="I enjoy sharing my experiences, particularly in the field of technology. I've been watching videos on the internet for as long as I can remember, so in 2018 I decided to start a">
-										</p>
-
-										<a href="https://www.youtube.com/c/NicolasMeseguer" class="link-dark" target="_blank">YouTube</a><span data-es="." data-en=""></span>
-
-										<span
-											data-es="Algunos vídeos tienen más de 150 mil visitas a día de hoy... ¿No es increíble? Si tienes suerte puedes encontrarme por"
-											data-en="channel. Some videos have already received over 150 thousand views as of today... Isn't it amazing? If lucky enough you can find me at">
-										</span>
-
-										<a href="https://www.twitch.tv/nicolasmeseguerr" class="link-dark" target="_blank">Twitch</a>
-										
-										</br>
-
-										<span class="lucida-console small">(<i class="fa-light fa-share-from-square"></i> <a href="https://www.youtube.com/@NicolasMeseguerArchive" class="link-dark" target="_blank">YouTube Archive)</a>.</span>
-
-									</div>
-								</div> -->
-
-								<!-- <p class="mt-4 mb-4">To know more about my current and past research visit the <a href="#experienceSection">Work Research</a> page.</p> -->
-								<p class="mt-4 mb-4">To know more about my current and past experiences, visit the <a href="javascript:void(0)" id="experienceLink">Experience</a> page.</p> 
+								<p class="bio-links mb-0">
+									<a href="mailto:aryanmangal2022@gmail.com" class="link-dark">Email</a>
+									<span class="bio-sep"> / </span>
+									<a href="https://www.linkedin.com/in/aryan-mangal-40ab0719b/" class="link-dark" rel="me" target="_blank">LinkedIn</a>
+									<span class="bio-sep"> / </span>
+									<a href="https://scholar.google.com/citations?user=vJFkjxcAAAAJ&hl=en" class="link-dark" rel="me" target="_blank">Google Scholar</a>
+									<span class="bio-sep"> / </span>
+									<a href="https://github.com/aryanmangal769" class="link-dark" rel="me" target="_blank">GitHub</a>
+									<span class="bio-sep"> / </span>
+									<a href="assets/documents/aryan_cv.pdf" class="link-dark" target="_blank" data-es="CV" data-en="CV">CV</a>
+								</p>
 							</div>
+							<div class="col-md-4 text-center">
+								<img src="assets/documents/imgs/aryan_mangal.jpg" class="d-inline-block img-fluid profilepicture" alt="Aryan Mangal, machine learning engineer at Woven by Toyota">
+							</div>
+						</div>
+					</div>
+					</section>
 
-							<h4 id="research" class="mt-2">Featured Publications</h4>
+					<div class="language">
+							<div id="leftPanel" class="d-none" aria-hidden="true"></div>
 
-								<!-- Publications -->
-							<div class="container">
-
-								<!-- Each new year -->
-								<div class="row mt-3">
-									<!-- Each new publication inside the given year -->
-									<div class="pub-block">
-										<!-- Title -->
-										<div><b>AirLoc: Object Based Indoor Relocalization</b></div>
-										<!-- Authors -->
-										<div class="mt-1"><span>Aryan</span>, Bowen Li, Sebastian Scherer, and Chen Wang</div>
-										<!-- Place -->
-										<div>Submitted to IEEE Robotics and Automation Letters (Under Review)</div>
-									</div>
+							<section id="news" class="page-section">
+								<h2 class="mt-4">News</h2>
+							<div class="news-container">
+								<div class="news-item">
+									<span class="news-date">Aug 2026</span>
+									<span>Competed at <a href="https://x.ai/grokathon" target="_blank">Grokathon</a> (xAI, San Francisco), building <strong>grokbot</strong> — personalized prediction-market insights from X activity using Grok. <a href="https://github.com/aryanmangal769/grokbot" target="_blank">Code</a></span>
 								</div>
-
-								<div class="row mt-3">
-									<div class="pub-block">
-										<div><b>PyPose: A Library for Robot Learning with Physics-based Optimization</b></div>
-										<div class="mt-1">Chen Wang, Dasong Gao, Kuan Xu, Junyi Geng, Yaoyu Hu, Yuheng Qiu, Bowen Li, Fan Yang, Brady Moon, Abhinav Pandey, <span>Aryan</span>, and others</div>
-										<div>Accepted to IEEE / CVF Computer Vision and Pattern Recognition Conference (CVPR)</div>
-									</div>
+								<div class="news-item">
+									<span class="news-date">Jul 2026</span>
+									<span>Took 2nd place at the <a href="https://luma.com/embodied-metal" target="_blank">Embodied Metal</a> robotics hackathon in San Francisco, building an end-to-end soccer goalkeeper on a Unitree G1. <a href="https://x.com/aryanmangal769/status/2078922785611796627" target="_blank">Demo</a></span>
 								</div>
-
-								<div class="row mt-3">
-									<div class="pub-block">
-										<div><b>Grad-Lidar-SLAM: Fully Differentiable Global SLAM for Lidar with Pose-Graph Optimization</b></div>
-										<div class="mt-1"><span>Aryan</span>, Dheeraj Vattikonda, Erqun Dong, Sabyasachi Sahoo</div>
-										<div>IROS 2022 Workshop Probabilistic Robotics in the Age of Deep Learning</div>
-									</div>
+								<div class="news-item">
+									<span class="news-date">Apr 2026</span>
+									<span>Competed at <a href="https://luma.com/robohacks-at-YC" target="_blank">RoboHacks</a> at Y Combinator, building Rocky, a voice-driven mobile manipulation system on Innate-OS. <a href="https://x.com/aryanmangal769/status/2043781728020639791" target="_blank">Demo</a></span>
+								</div>
+								<div class="news-item">
+									<span class="news-date">Apr 2026</span>
+									<span>Served as a reviewer for IROS 2026.</span>
+								</div>
+								<div class="news-item">
+									<span class="news-date">Nov 2025</span>
+									<span>Served as a reviewer for ICRA 2026.</span>
+								</div>
+								<div class="news-item">
+									<span class="news-date">Jul 2025</span>
+									<span>Joined <a href="https://woven.toyota/" target="_blank">Woven by Toyota</a> as a Machine Learning Engineer on the Foundational Behavior Model.</span>
+								</div>
+								<div class="news-item">
+									<span class="news-date">May 2025</span>
+									<span>Graduated with an MS in Robotics from <a href="https://www.ri.cmu.edu/" target="_blank">CMU</a> (GPA 4.08/4), advised by <a href="https://www.cs.cmu.edu/~sycara/" target="_blank">Prof. Katia Sycara</a>.</span>
+								</div>
+								<div class="news-item">
+									<span class="news-date">Aug 2023</span>
+									<span>Started MS in Robotics at Carnegie Mellon University.</span>
+								</div>
+								<div class="news-item">
+									<span class="news-date">Mar 2023</span>
+									<span><strong>JN Tata Endowment for Higher Education</strong> — Top 0.1% in a pool of 10,000+ applicants.</span>
+								</div>
+								<div class="news-item">
+									<span class="news-date">Mar 2022</span>
+									<span><strong>Robotics Institute Summer Scholarship</strong> — One of 4 students from India selected for the <a href="https://riss.ri.cmu.edu/" target="_blank">CMU RISS</a> research internship.</span>
+								</div>
+								<div class="news-item">
+									<span class="news-date">Mar 2022</span>
+									<span><strong>Intelligent Ground Vehicle Competition</strong> — 1st place in the Cybersecurity Challenge at IGVC, Oakland University.</span>
+								</div>
+								<div class="news-item">
+									<span class="news-date">Mar 2022</span>
+									<span><strong>DAAD WISE Internship</strong> — One of 80 students from India selected for research in Germany.</span>
+								</div>
+								<div class="news-item">
+									<span class="news-date">Mar 2022</span>
+									<span><strong>Mitacs Globalink Internship</strong> — One of 117 students from India selected for an internship in Canada.</span>
+								</div>
+								<div class="news-item">
+									<span class="news-date">Oct 2021</span>
+									<span><strong>MATLAB Minidrone Competition</strong> — International Finale qualifier; top 8 from Europe, Middle East, and Asia.</span>
 								</div>
 							</div>
+							</section>
+
+							<section id="experience" class="page-section">
+								<h2 class="mt-4">Experience</h2>
+
+								<h3 class="section-subtitle">Industry</h3>
+								<div class="media-entries exp-entries exp-scroll" id="industry-list" data-visible="2" tabindex="0" aria-label="Industry experience">
+									<div class="media-entry exp-entry collapse-item">
+										<div class="media-entry-media exp-logo">
+											<img src="assets/documents/imgs/orgs/woven.png" alt="Woven by Toyota">
+										</div>
+										<div class="media-entry-body">
+											<div class="entry-top">
+												<span class="papertitle">Machine Learning Engineer — Foundational Behavior Model</span>
+												<span class="entry-date">Jul 2025 – Present</span>
+											</div>
+											<p class="exp-org">Woven by Toyota · Palo Alto, CA</p>
+											<ul class="exp-bullets">
+												<li>Built <strong>FBM (Foundational Behavior Model)</strong>, a foundation model for driving behavior powering multiple downstream tasks via task-specific heads: distillation to the onboard behavior model, synthetic scene generation, and scene search.</li>
+												<li>Built and deployed a neural simulation model trained with <strong>offline RL</strong> to enable inference-time control of agent behavior for closed-loop evaluation, and generated 2,000+ hours of synthetic scenario data.</li>
+												<li>Accelerated <strong>large-scale Transformer training</strong> by migrating the compilation stack from TorchScript to TorchDynamo (torch.compile) and integrating FlashAttention-2 for memory-efficient attention.</li>
+												<li>Built an agentic library that <strong>automates org-wide ML workflows</strong> (data generation, on-vehicle deployment validation, model training), cutting the ML model lifecycle from weeks to days and adopted by 700+ employees.</li>
+												<li>Led integration of navigation intent into the ML behavior model, enabling action decisions without rule-based heuristics.</li>
+											</ul>
+										</div>
+									</div>
+									<div class="media-entry exp-entry collapse-item">
+										<div class="media-entry-media exp-logo exp-logo-dark">
+											<img src="assets/documents/imgs/orgs/orangewood-white.png" alt="Orangewood Labs">
+										</div>
+										<div class="media-entry-body">
+											<div class="entry-top">
+												<span class="papertitle">Computer Vision Intern — 3D Bounding-Box Detection for Unseen Objects</span>
+												<span class="entry-date">Jan 2023 – May 2023</span>
+											</div>
+											<p class="exp-org">Orangewood Labs · New Delhi, India</p>
+											<ul class="exp-bullets">
+												<li>Engineered a solution to generate safe trajectories for robots to interact with novel objects, using RGB-D images.</li>
+												<li>Leveraged Segment Anything Model’s 2D bounding boxes and depth data to generate 3D boxes for objects.</li>
+											</ul>
+										</div>
+									</div>
+									<div class="media-entry exp-entry collapse-item">
+										<div class="media-entry-media exp-logo">
+											<img src="assets/documents/imgs/orgs/octobotics.png" alt="Octobotics Tech">
+										</div>
+										<div class="media-entry-body">
+											<div class="entry-top">
+												<span class="papertitle">Robotics Intern — UAV Localization</span>
+												<span class="entry-date">Apr 2021 – Jul 2021</span>
+											</div>
+											<p class="exp-org">Octobotics Tech Private Limited</p>
+											<ul class="exp-bullets">
+												<li>Built UAV localization for dim-light and GPS-denied environments in ROS.</li>
+											</ul>
+										</div>
+									</div>
+									<div class="media-entry exp-entry collapse-item">
+										<div class="media-entry-media exp-logo">
+											<img src="assets/documents/imgs/orgs/meity.png" alt="MeitY">
+										</div>
+										<div class="media-entry-body">
+											<div class="entry-top">
+												<span class="papertitle">Research Intern — EV Motor Controllers</span>
+												<span class="entry-date">Jan 2021 – Jul 2021</span>
+											</div>
+											<p class="exp-org">Ministry of Electronics and Information Technology</p>
+											<ul class="exp-bullets">
+												<li>Designed motor controllers for low- and medium-power EVs; heat-sink work cut MOSFET average temperature by 10°C.</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<h3 class="section-subtitle">Research</h3>
+								<div class="research-entries exp-scroll" id="research-list" data-visible="2" tabindex="0" aria-label="Research experience">
+									<article class="research-entry collapse-item">
+										<div class="research-media research-media-figure">
+											<img src="assets/documents/imgs/projects/vla_zero_human.jpg" alt="Dual-arm setup for dexterous VLA with closed-loop VLM control">
+										</div>
+										<div class="research-body">
+											<div class="entry-top">
+												<span class="papertitle">Zero-Human Supervision: Closed-Loop VLM Control for Dexterous VLA Policies</span>
+												<span class="entry-date">2026 – Present</span>
+											</div>
+											<ul class="exp-bullets">
+												<li>Closed-loop VLM control and recovery for dexterous VLA, with no human demonstration or intervention.</li>
+											</ul>
+										</div>
+									</article>
+									<article class="research-entry collapse-item">
+										<div class="research-media">
+											<video src="assets/documents/imgs/clips/symant.mp4" autoplay muted loop playsinline disablepictureinpicture controlslist="nodownload nofullscreen noremoteplayback" aria-label="SymAnt demo clip"></video>
+										</div>
+										<div class="research-body">
+											<div class="entry-top">
+												<span class="papertitle">SymAnt: Neuro-Symbolic Diffusion Models for Action Anticipation</span>
+												<span class="entry-date">Aug 2023 – Jul 2025</span>
+											</div>
+											<p class="exp-org">Advanced Agents Robotics Technology Lab, CMU · <a href="https://github.com/aryanmangal769/SymAnt-Neurosymbolic-diffusion-models/tree/master" target="_blank">code</a> · <a href="https://drive.google.com/file/d/1rE5JZESLs6K32dAHMnuvQ4q4_k07sgnj/view?usp=sharing" target="_blank">paper</a></p>
+											<ul class="exp-bullets">
+												<li>Built diffusion models to anticipate humans’ long-term actions from short video, enabling proactive robot assistance.</li>
+												<li>Achieved SOTA accuracy (+4–5%) at 80× smaller size and 3× faster training, enabling real-time robot deployment.</li>
+											</ul>
+										</div>
+									</article>
+									<article class="research-entry collapse-item">
+										<div class="research-media">
+											<iframe src="https://www.youtube-nocookie.com/embed/XDtUDIWuGng?start=75&amp;end=85&amp;autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=XDtUDIWuGng&amp;controls=0&amp;modestbranding=1&amp;playsinline=1&amp;rel=0" title="PyPose demo clip" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+										</div>
+										<div class="research-body">
+											<div class="entry-top">
+												<span class="papertitle">PyPose: A Library for Deep Learning with Physics-based Optimization</span>
+												<span class="entry-date">Jan 2022 – Dec 2022</span>
+											</div>
+											<p class="exp-org">The AirLab, CMU, Pittsburgh · <a href="https://github.com/pypose/pypose" target="_blank">code</a> · <a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Wang_PyPose_A_Library_for_Robot_Learning_With_Physics-Based_Optimization_CVPR_2023_paper.pdf" target="_blank">CVPR paper</a></p>
+											<ul class="exp-bullets">
+												<li>Developed a PyTorch library exposing physics-based optimization and Lie-group operations as differentiable layers.</li>
+												<li>Built a batched differentiable IMU preintegration layer (SO(3) propagation, Jacobian covariance) for neural training.</li>
+											</ul>
+										</div>
+									</article>
+									<article class="research-entry collapse-item">
+										<div class="research-media">
+											<iframe src="https://www.youtube-nocookie.com/embed/-Kk6dWQFzow?start=25&amp;end=55&amp;autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=-Kk6dWQFzow&amp;controls=0&amp;modestbranding=1&amp;playsinline=1&amp;rel=0" title="AirLoc demo clip" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+										</div>
+										<div class="research-body">
+											<div class="entry-top">
+												<span class="papertitle">AirLoc: Object-based Indoor Relocalization</span>
+												<span class="entry-date">May 2022 – Present</span>
+											</div>
+											<p class="exp-org">Robotics Institute Summer Scholar · The AirLab, CMU · Prof. Sebastian Scherer · <a href="https://www.ri.cmu.edu/ri-faculty/sebastian-scherer/" target="_blank">advisor</a></p>
+											<ul class="exp-bullets">
+												<li>Developed <strong>AirLoc</strong>, indoor relocalization using geometric and semantic object cues; outperformed SOTA in room-level relocalization.</li>
+											</ul>
+										</div>
+									</article>
+									<article class="research-entry collapse-item">
+										<div class="research-media research-media-figure">
+											<img src="assets/documents/imgs/projects/flare_qualitative.jpg" alt="Qualitative flare-removal results from the paper">
+										</div>
+										<div class="research-body">
+											<div class="entry-top">
+												<span class="papertitle">Self-Supervised Flare Removal</span>
+												<span class="entry-date">2022 – 2023</span>
+											</div>
+											<p class="exp-org">Delhi Technological University · <a href="https://github.com/aryanmangal769/Image-flare-removal-using-Deep-Convolutional-Generative-Adversarial-Networks" target="_blank">code</a> · <a href="https://ieeexplore.ieee.org/document/10116874" target="_blank">paper</a></p>
+											<ul class="exp-bullets">
+												<li>Flare removal with conditional GANs and self-supervised fine-tuning; SSIM improved from 0.887 to 0.916.</li>
+											</ul>
+										</div>
+									</article>
+									<article class="research-entry collapse-item">
+										<div class="research-media research-media-logo">
+											<img src="assets/documents/imgs/orgs/iiit.png" alt="IIIT Hyderabad">
+										</div>
+										<div class="research-body">
+											<div class="entry-top">
+												<span class="papertitle">Place Recognition with Scene Graphs</span>
+												<span class="entry-date">May 2021 – Dec 2021</span>
+											</div>
+											<p class="exp-org">IIIT Hyderabad · Dr. K. Madhava Krishna · <a href="https://www.iiit.ac.in/people/faculty/mkrishna/" target="_blank">advisor</a></p>
+											<ul class="exp-bullets">
+												<li>Place recognition with scene graphs and deep learning for room- and metric-level localization. Baselines: NetVlad, Scan Matching, DeLG.</li>
+											</ul>
+										</div>
+									</article>
+									<article class="research-entry collapse-item">
+										<div class="research-media research-media-logo">
+											<img src="assets/documents/imgs/orgs/samsung.svg" alt="Samsung">
+										</div>
+										<div class="research-body">
+											<div class="entry-top">
+												<span class="papertitle">Mental Health Recognition using HRV and GSR</span>
+												<span class="entry-date">May 2021 – Present</span>
+											</div>
+											<p class="exp-org">Samsung Digital Academy Research Lab, DTU · Dr. Divyashikha Sethia · <a href="http://people.dtu.ac.in/faculty/view.php?uname=divyashikhas" target="_blank">advisor</a></p>
+											<ul class="exp-bullets">
+												<li>Developed a stress-level classification system from ECG-derived HRV and GSR features, reaching 93.96% binary and 81.41% three-class accuracy.</li>
+											</ul>
+										</div>
+									</article>
+								</div>
+							</section>
+
+							<section id="projects" class="page-section">
+								<h2 class="mt-4">Projects</h2>
+								<div class="research-entries exp-scroll" id="projects-list" data-visible="2" tabindex="0" aria-label="Projects">
+									<article class="research-entry">
+										<div class="research-media">
+											<video src="assets/documents/imgs/clips/soccerbot.mp4" autoplay muted loop playsinline disablepictureinpicture controlslist="nodownload nofullscreen noremoteplayback" aria-label="Soccerbot demo"></video>
+										</div>
+										<div class="research-body">
+											<div class="entry-top">
+												<span class="papertitle">Soccerbot</span>
+												<span class="entry-date">Jul 2026</span>
+											</div>
+											<p class="exp-org">Embodied Metal hackathon, 2nd place · Unitree G1 · <a href="https://github.com/arjuncoder1/soccerbot" target="_blank">code</a> · <a href="https://soccer.tenacelabs.com" target="_blank">website</a> · <a href="https://x.com/aryanmangal769/status/2078922785611796627" target="_blank">demo</a></p>
+											<ul class="exp-bullets">
+												<li>End-to-end goalkeeper on a Unitree G1: learned 14-DOF ACT ball pickup, then a scripted turn, avoid, and throw.</li>
+												<li>Depth-based human detection with side-to-side shuffle until the throwing lane is clear.</li>
+											</ul>
+										</div>
+									</article>
+									<article class="research-entry">
+										<div class="research-media">
+											<video src="assets/documents/imgs/clips/rocky.mp4" autoplay muted loop playsinline disablepictureinpicture controlslist="nodownload nofullscreen noremoteplayback" aria-label="Rocky demo"></video>
+										</div>
+										<div class="research-body">
+											<div class="entry-top">
+												<span class="papertitle">Rocky</span>
+												<span class="entry-date">Apr 2026</span>
+											</div>
+											<p class="exp-org">Voice-driven manipulation and visual search · <a href="https://github.com/aryanmangal769/innate-os" target="_blank">code</a> · <a href="https://x.com/aryanmangal769/status/2043781728020639791" target="_blank">demo</a></p>
+											<ul class="exp-bullets">
+												<li>Trained manipulation policies (ACT, GROOT) for can pickup robust to arbitrary orientations.</li>
+												<li>End-to-end voice-to-action for multi-step pickup and visual search with spatial memory.</li>
+											</ul>
+										</div>
+									</article>
+									<article class="research-entry">
+										<div class="research-media research-media-figure">
+											<img src="assets/documents/imgs/projects/xiaohei.jpg" alt="Xiao Hei VLN: RViz, Unity sim, and exploration logs">
+										</div>
+										<div class="research-body">
+											<div class="entry-top">
+												<span class="papertitle">Xiao Hei</span>
+												<span class="entry-date">2026</span>
+											</div>
+											<p class="exp-org">CMU Vision-Language Navigation Challenge · <a href="https://github.com/ginlov/CMU-VLN-Challenge-2026" target="_blank">code</a> · <a href="https://ginlov.github.io/xiao-hei-vln-cmu/" target="_blank">website</a></p>
+											<ul class="exp-bullets">
+												<li>VLN stack with a Gemini responder, YOLO-World + SAM perception, a 3D object scene graph, and frontier-based exploration.</li>
+											</ul>
+										</div>
+									</article>
+									<article class="research-entry">
+										<div class="research-media research-media-figure">
+											<img src="assets/documents/imgs/projects/needle_spmm.png" alt="Sparse-dense matrix multiply diagram for Needle CUDA kernels">
+										</div>
+										<div class="research-body">
+											<div class="entry-top">
+												<span class="papertitle">Needle</span>
+												<span class="entry-date">2024</span>
+											</div>
+											<p class="exp-org">Deep Learning Systems · <a href="https://colab.research.google.com/drive/1ZhILSdn4QCeMysoy-VPLxDAo0x6j8-RX" target="_blank">code</a></p>
+											<ul class="exp-bullets">
+												<li>Autograd library with custom CUDA kernels for sparse-dense matrix multiplications; 40% faster GNN training vs dense matmul.</li>
+											</ul>
+										</div>
+									</article>
+									<article class="research-entry">
+										<div class="research-media research-media-figure">
+											<img src="assets/documents/imgs/projects/legal_pipeline.png" alt="Legal document summarization pipeline: LoRA fine-tune then FAISS RAG">
+										</div>
+										<div class="research-body">
+											<div class="entry-top">
+												<span class="papertitle">Legal Document Summarization</span>
+												<span class="entry-date">2024</span>
+											</div>
+											<p class="exp-org">Carnegie Mellon University · <a href="https://github.com/aryanmangal769/Legal-Doc-Summarization-LLM-LoRA-RAG" target="_blank">code</a></p>
+											<ul class="exp-bullets">
+												<li>Fine-tuned Llama-2-7b with LoRA and deployed a FAISS/TF-IDF RAG pipeline for Indian legal documents.</li>
+											</ul>
+										</div>
+									</article>
+									<article class="research-entry">
+										<div class="research-media">
+											<video src="assets/documents/imgs/clips/griffin.mp4" autoplay muted loop playsinline disablepictureinpicture controlslist="nodownload nofullscreen noremoteplayback" aria-label="Griffin UGV demo"></video>
+										</div>
+										<div class="research-body">
+											<div class="entry-top">
+												<span class="papertitle">Griffin</span>
+												<span class="entry-date">2019 – 2023</span>
+											</div>
+											<p class="exp-org">Team Leader · DTU Unmanned Ground Vehicle · <a href="https://github.com/aryanmangal769/UGV-DTU_ROS_Stack" target="_blank">code</a></p>
+											<ul class="exp-bullets">
+												<li>ROS navigation and perception with SLAM, GPS-waypoint navigation, and LiDAR–IMU–GPS fusion.</li>
+												<li>Deep networks for lane following and obstacle avoidance; 3rd at IGVC 2023.</li>
+											</ul>
+										</div>
+									</article>
+									<article class="research-entry">
+										<div class="research-media">
+											<video src="assets/documents/imgs/clips/grokbot.mp4" autoplay muted loop playsinline disablepictureinpicture controlslist="nodownload nofullscreen noremoteplayback" aria-label="Grokbot Markets UI demo"></video>
+										</div>
+										<div class="research-body">
+											<div class="entry-top">
+												<span class="papertitle">Grokbot</span>
+												<span class="entry-date">Aug 2026</span>
+											</div>
+											<p class="exp-org">Grokathon · xAI · <a href="https://github.com/aryanmangal769/grokbot" target="_blank">code</a></p>
+											<ul class="exp-bullets">
+												<li>Polymarket × X opinion pipeline: harvest discussion, Grok camp reports, and an X-style Markets UI.</li>
+												<li>Auto explainer videos from camp reports with Grok Imagine and ffmpeg.</li>
+											</ul>
+										</div>
+									</article>
+									<article class="research-entry">
+										<div class="research-media research-media-figure">
+											<img src="assets/documents/imgs/projects/minidrone.png" alt="Parrot minidrone line-follower simulation">
+										</div>
+										<div class="research-body">
+											<div class="entry-top">
+												<span class="papertitle">Line Follower Minidrone</span>
+												<span class="entry-date">Apr 2021 – Jun 2021</span>
+											</div>
+											<p class="exp-org">MATLAB Minidrone Competition · <a href="https://github.com/de-viant/UGV-DTU-at-MinidroneCompetition2021" target="_blank">code</a></p>
+											<ul class="exp-bullets">
+												<li>Model-based line-follower algorithm in MATLAB/Simulink for a Parrot minidrone.</li>
+											</ul>
+										</div>
+									</article>
+									<article class="research-entry">
+										<div class="research-media research-media-figure">
+											<img src="assets/documents/imgs/projects/fpga_board.jpg" alt="FPGA development board">
+										</div>
+										<div class="research-body">
+											<div class="entry-top">
+												<span class="papertitle">Neural Networks on FPGAs</span>
+												<span class="entry-date">Jan 2021 – May 2021</span>
+											</div>
+											<p class="exp-org">DTU</p>
+											<ul class="exp-bullets">
+												<li>Compared neural network implementation methods on FPGAs for early prototyping in Python.</li>
+											</ul>
+										</div>
+									</article>
+									<article class="research-entry">
+										<div class="research-media">
+											<img src="assets/documents/imgs/projects/micromouse.png" alt="Micromouse maze in Gazebo">
+										</div>
+										<div class="research-body">
+											<div class="entry-top">
+												<span class="papertitle">Micro-Mouse Challenge</span>
+												<span class="entry-date">Dec 2020</span>
+											</div>
+											<p class="exp-org">IIT Bombay TechFest · <a href="https://github.com/aryanmangal769/Micromouse" target="_blank">code</a></p>
+											<ul class="exp-bullets">
+												<li>Maze exploration in Gazebo with backtracking and Slam_gmapping in ROS.</li>
+											</ul>
+										</div>
+									</article>
+								</div>
+							</section>
+
+							<section id="publications" class="page-section">
+								<h2 class="mt-4">Publications</h2>
+								<div class="pub-list exp-scroll" id="publications-list" data-visible="4" tabindex="0" aria-label="Publications">
+									<article class="pub-item">
+										<span class="pub-year">2025</span>
+										<div class="pub-body">
+											<p class="pub-title">Parameter-Efficient Neuro-Symbolic Action Anticipation via Iterative Context Refinement</p>
+											<p class="pub-authors"><strong>Aryan</strong></p>
+											<p class="pub-venue"><em>Master's thesis, Carnegie Mellon University, CMU-RI-TR-25-45</em> · <a href="https://publications.ri.cmu.edu/storage/publications/2025/06/Symant.pdf" target="_blank">pdf</a></p>
+										</div>
+									</article>
+									<article class="pub-item">
+										<span class="pub-year">2025</span>
+										<div class="pub-body">
+											<p class="pub-title">SymAnt: Neuro-Symbolic Diffusion Models for Action Anticipation</p>
+											<p class="pub-authors"><strong>Aryan</strong>, Simon Stepputtis, Yaqi Xie, Hossein Nourkhiz Mahjoub, Katia Sycara</p>
+											<p class="pub-venue"><em>Workshop — ICRA 2025</em> · Under review, WACV 2027 · <a href="https://drive.google.com/file/d/1rE5JZESLs6K32dAHMnuvQ4q4_k07sgnj/view?usp=sharing" target="_blank">paper</a> · <a href="https://github.com/aryanmangal769/SymAnt-Neurosymbolic-diffusion-models/tree/master" target="_blank">code</a></p>
+										</div>
+									</article>
+									<article class="pub-item">
+										<span class="pub-year">2024</span>
+										<div class="pub-body">
+											<p class="pub-title">Symbolic Graph Inference for Compound Scene Understanding</p>
+											<p class="pub-authors"><strong>Aryan</strong>, Simon Stepputtis, Sarthak Bhagat, Joseph Campbell, Kwonjoon Lee, Hossein Nourkhiz Mahjoub, Katia Sycara</p>
+											<p class="pub-venue"><em>arXiv 2410.22626</em> · Workshop — ICRA 2024 · <a href="https://arxiv.org/abs/2410.22626" target="_blank">paper</a> · <a href="https://github.com/aryanmangal769/Symbolic-Graph-Inference-for-Compound-Scene-Understanding" target="_blank">code</a></p>
+										</div>
+									</article>
+									<article class="pub-item">
+										<span class="pub-year">2023</span>
+										<div class="pub-body">
+											<p class="pub-title">PyPose: A Library for Robot Learning with Physics-based Optimization</p>
+											<p class="pub-authors">Chen Wang, Dasong Gao, Kuan Xu, Junyi Geng, Yaoyu Hu, Yuheng Qiu, Bowen Li, Fan Yang, Brady Moon, Abhinav Pandey, <strong>Aryan</strong>, Jiahe Xu, Tianhao Wu, Haonan He, Daning Huang, Zhongqiang Ren, Shibo Zhao, Taimeng Fu, Pranay Reddy, Xiao Lin, Wenshan Wang, Jingnan Shi, Rajat Talak, Kun Cao, Yi Du, Han Wang, Huai Yu, Shanzhao Wang, Siyu Chen, Ananth Kashyap, Rohan Bandaru, Karthik Dantu, Jiajun Wu, Lihua Xie, Luca Carlone, Marco Hutter, Sebastian Scherer</p>
+											<p class="pub-venue"><em>CVPR 2023</em> · <a href="https://arxiv.org/abs/2209.15428" target="_blank">paper</a> · <a href="https://github.com/pypose/pypose" target="_blank">code</a></p>
+										</div>
+									</article>
+									<article class="pub-item">
+										<span class="pub-year">2023</span>
+										<div class="pub-body">
+											<p class="pub-title">Thermal Study of MOSFET Heat Sinks for Motor Controller in Neighbourhood Electric Vehicles</p>
+											<p class="pub-authors">Kshitij Tripathi, Aakash Ghosh, <strong>Aryan Mangal</strong>, Mini Sreejeth, S. Indu</p>
+											<p class="pub-venue"><em>International Journal of Electric and Hybrid Vehicles</em> 15 (3), 256–271 · <a href="https://doi.org/10.1504/ijehv.2023.134373" target="_blank">paper</a></p>
+										</div>
+									</article>
+									<article class="pub-item">
+										<span class="pub-year">2023</span>
+										<div class="pub-body">
+											<p class="pub-title">Image Flare Removal using Deep Convolutional Generative Adversarial Networks</p>
+											<p class="pub-authors"><strong>Aryan</strong>, Ishan Prakash, S. Indu, Mini Sreejeth</p>
+											<p class="pub-venue"><em>IEEE SPIN 2023</em> · <a href="https://ieeexplore.ieee.org/document/10116874" target="_blank">paper</a> · <a href="https://github.com/aryanmangal769/Image-flare-removal-using-Deep-Convolutional-Generative-Adversarial-Networks" target="_blank">code</a></p>
+										</div>
+									</article>
+									<article class="pub-item">
+										<span class="pub-year">2023</span>
+										<div class="pub-body">
+											<p class="pub-title">AirLoc: Object-based Indoor Relocalization</p>
+											<p class="pub-authors"><strong>Aryan</strong>, Bowen Li, Sebastian Scherer, Yun-Jou Lin, Chen Wang</p>
+											<p class="pub-venue"><em>arXiv 2304.00954</em> · <a href="https://arxiv.org/abs/2304.00954" target="_blank">paper</a> · <a href="https://github.com/sair-lab/AirLoc" target="_blank">code</a></p>
+										</div>
+									</article>
+									<article class="pub-item">
+										<span class="pub-year">2022</span>
+										<div class="pub-body">
+											<p class="pub-title">Grad-Lidar-SLAM: Fully Differentiable Global SLAM for Lidar</p>
+											<p class="pub-authors"><strong>Aryan</strong>, Dheeraj Vattikonda, Erqun Dong, Sabyasachi Sahoo</p>
+											<p class="pub-venue"><em>IROS 2022 Workshop on Probabilistic Robotics in the Age of Deep Learning</em> · <a href="https://openreview.net/forum?id=tvPtqbjsKgX" target="_blank">paper</a> · <a href="https://github.com/aryanmangal769/grad_lidar_SLAM" target="_blank">code</a></p>
+										</div>
+									</article>
+									<article class="pub-item">
+										<span class="pub-year">2022</span>
+										<div class="pub-body">
+											<p class="pub-title">HRV and GSR as Viable Physiological Markers for Mental Health Recognition</p>
+											<p class="pub-authors"><strong>Aryan</strong>, Lovish Arya, Divyashikha Sethia</p>
+											<p class="pub-venue"><em>COMSNETS 2022</em> · <a href="https://ieeexplore.ieee.org/document/9668439" target="_blank">paper</a></p>
+										</div>
+									</article>
+									<article class="pub-item">
+										<span class="pub-year">2021</span>
+										<div class="pub-body">
+											<p class="pub-title">Realization of Low-Cost Footwear Integrated Step-Counting Device for Health Monitoring System</p>
+											<p class="pub-authors"><strong>Aryan</strong>, Poornima Mittal</p>
+											<p class="pub-venue"><em>Journal of Physics: Conference Series</em> 1998 (1), 012006 · <a href="https://iopscience.iop.org/article/10.1088/1742-6596/1998/1/012006" target="_blank">paper</a></p>
+										</div>
+									</article>
+								</div>
+							</section>
 
 						</div>
-					</div>
 				</div>
 
 
-				<!-- Experience Section Styles -->
-				<style>
-					/* Experience section cards */
-					.experience-section {
-					background-color: #3b3b3b; /* Dark background */
-					color: #f2f2f2;            /* Light text */
-					border-radius: 10px;
-					padding: 20px;
-					margin-bottom: 20px;
-					box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
-					transition: transform 0.2s ease-in-out;
-					}
-					.experience-section:hover {
-					transform: translateY(-5px);
-					}
-					/* Experience title styling */
-					.experience-title {
-					color: #f2f2f2;
-					border-bottom: 2px solid #9ecfff; /* Blue accent border */
-					padding-bottom: 5px;
-					margin-bottom: 10px;
-					}
-					/* Date styling */
-					.experience-date {
-					color: #9ecfff; /* Blue accent for dates */
-					font-size: 0.95rem;
-					margin-bottom: 10px;
-					}
-					/* Link styling within experience */
-					.experience-section a {
-					color: #9ecfff;
-					text-decoration: none;
-					}
-					.experience-section a:hover {
-					color: #c0e4ff;
-					}
-				</style>
-				
-				<div class="col-md-8 offset-md-1 mb-5" id="experienceContent">
-					<div class="container">
-					<h1 class="text-center mb-5">Professional Experience</h1>
-
-
-					<div class="experience-section">
-						<h2 class="experience-title">Neuro-Symbolic Models for Interpretable Scene and Behaviour Understanding</h2>
-						<div class="experience-date">(Aug 2023 - Present)</div>
-						<p class="mt-1 justify">
-						  <strong>Advanced Agents Robotics Technology Lab, CMU</strong> - Research Assistant<br>
-						  <strong>May 2023</strong> | GPA: 9.5/10<br>
-						  <strong>Publications:</strong> Submission - ICCV 2025 Code Paper, Submission - IROS 2025 Code Paper, IEEE SPIN 2023 Code Paper
-						</p>
-						<ul>
-						  <li>Developed sample-efficient diffusion models to anticipate long-term human actions from short video observations.</li>
-						  <li>Combined scene and knowledge graphs to provide interpretable, contextually rich priors to neural networks.</li>
-						  <li>Improved state-of-the-art anticipation accuracy by 4-5% while reducing model size by 80x and training time by 3x.</li>
-						</ul>
-					  </div>
-				
-					<!-- Robotics Institute Summer Scholarship, CMU -->
-					<div class="experience-section">
-						<h2 class="experience-title">Robotics Institute Summer Scholarship, CMU</h2>
-						<div class="experience-date">(May 2022 - Present, Pittsburgh, USA)</div>
-						<p class="mt-1 justify">
-						Developed <strong>AirLoc</strong>, a simple yet effective indoor relocalization approach that utilizes both geometric and semantic information of a scene by using objects to perform relocalization.
-						</p>
-						<ul>
-						<li>Outperformed state-of-the-art methods in room-level relocalization.</li>
-						<li>Supervisor: <strong>Prof. Sebastian Scherer</strong> <a href="https://www.ri.cmu.edu/ri-faculty/sebastian-scherer/" target="_blank">(Personal Webpage)</a></li>
-						</ul>
-					</div>
-					
-				
-					<!-- Carnegie Mellon University - Pypose Project -->
-					<div class="experience-section">
-						<h2 class="experience-title">Carnegie Mellon University - Pypose Project</h2>
-						<div class="experience-date">(Dec 2021 - May 2022, Pittsburgh, USA)</div>
-						<p class="mt-1 justify">
-						Worked on developing a first-of-its-kind differentiable IMU preintegrator and added bias correction and covariance propagation to the base IMU preintegrator for PyPose, a library connecting classical learning with modern methods.
-						</p>
-						<ul>
-						<li>Supervisor: <strong>Prof. Sebastian Scherer</strong> <a href="https://www.ri.cmu.edu/ri-faculty/sebastian-scherer/" target="_blank">(Personal Webpage)</a></li>
-						</ul>
-					</div>
-				
-					<!-- International Institute of Information Technology, Hyderabad -->
-					<div class="experience-section">
-						<h2 class="experience-title">International Institute of Information Technology, Hyderabad</h2>
-						<div class="experience-date">(May 2021 - Dec 2021, Hyderabad, India)</div>
-						<p class="mt-1 justify">
-						Worked on a novel approach for place-recognition using Scene-Graphs and deep-learning techniques for room-level and metric-level localization.
-						</p>
-						<ul>
-						<li>Extracted baseline accuracy from existing techniques like NetVlad, Scan Matching, and DeLG.</li>
-						<li>Supervisor: <strong>Dr. K. Madhava Krishna</strong> <a href="https://www.iiit.ac.in/people/faculty/mkrishna/" target="_blank">(Personal Webpage)</a></li>
-						</ul>
-					</div>
-				
-					<!-- Samsung Digital Academy Research Lab, DTU -->
-					<div class="experience-section">
-						<h2 class="experience-title">Samsung Digital Academy Research Lab, DTU</h2>
-						<div class="experience-date">(May 2021 - Present, New Delhi, India)</div>
-						<p class="mt-1 justify">
-						Developed a stress prediction system based on Electrocardiogram (ECG) and Heart Rate Variability (HRV) data, determining optimal HRV features for cumulative stress monitoring.
-						</p>
-						<ul>
-						<li>Tested various machine learning and deep learning algorithms to improve accuracy over baselines.</li>
-						<li>Supervisor: <strong>Dr. Divyashikha Sethia</strong> <a href="http://people.dtu.ac.in/faculty/view.php?uname=divyashikhas" target="_blank">(Personal Webpage)</a></li>
-						</ul>
-					</div>
-				
-					</div>
-				</div>
-				
-				
-				
-
-				<!-- Publications Section -->
-				<style>
-					/* Publication Section Styles */
-					.pub-year-h2 {
-					color: #9ecfff; /* Blue accent for years */
-					border-bottom: 2px solid #9ecfff;
-					padding-bottom: 5px;
-					margin-bottom: 20px;
-					}
-					.pub-block {
-					background-color: #3b3b3b; /* Dark background */
-					color: #f2f2f2;            /* Light text */
-					border-radius: 10px;
-					padding: 15px;
-					margin-bottom: 20px;
-					box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
-					transition: transform 0.2s ease-in-out;
-					}
-					.pub-block:hover {
-					transform: translateY(-5px);
-					}
-					.pub-authors {
-					margin-top: 10px;
-					}
-					.pub-author {
-					font-weight: bold;
-					}
-					.pub-congress {
-					margin-top: 10px;
-					}
-					.pub-block a {
-					color: #9ecfff;
-					text-decoration: none;
-					}
-					.pub-block a:hover {
-					color: #c0e4ff;
-					}
-				</style>
-				
-				<div class="col-md-8 offset-md-1 mb-5" id="publicationsContent">
-					<div class="container">
-					
-					<!-- 2024 Publications -->
-					<div class="row mt-3">
-						<h2 class="pub-year-h2">2024</h2>
-						
-						<div class="pub-block">
-						<div class="lucida-console h5">AirLoc: Object Based Indoor Relocalization</div>
-						<div class="pub-authors mt-1"><span class="pub-author">Aryan</span>, Bowen Li, Sebastian Scherer, Chen Wang</div>
-						<div class="pub-congress">Submitted to IEEE Robotics and Automation Letters (Under Review)</div>
-						</div>
-						
-						<div class="pub-block">
-						<div class="lucida-console h5">PyPose: A Library for Robot Learning with Physics-based Optimization</div>
-						<div class="pub-authors mt-1">
-							<span class="pub-author">Chen Wang</span>, Dasong Gao, Kuan Xu, Junyi Geng, Yaoyu Hu, Yuheng Qiu, Bowen Li, Fan Yang, Brady Moon, Abhinav Pandey, Aryan, et al.
-						</div>
-						<div class="pub-congress">
-							Submitted to IEEE / CVF Computer Vision and Pattern Recognition Conference (CVPR)
-						</div>
-						<div class="mt-1">
-							<span>
-							<i class="far fa-file-pdf"></i>
-							<a href="https://arxiv.org/abs/2209.15428" target="_blank" class="link-dark">Link</a>
-							</span>
-						</div>
-						</div>
-					</div>
-					
-					<!-- 2023 Publications -->
-					<div class="row mt-3">
-						<h2 class="pub-year-h2">2023</h2>
-						
-						<div class="pub-block">
-						<div class="lucida-console h5">Grad-Lidar-SLAM: Fully Differentiable Global SLAM for Lidar with Pose-Graph Optimization</div>
-						<div class="pub-authors mt-1"><span class="pub-author">Aryan</span>, Dheeraj Vattikonda, Erqun Dong, Sabyasachi Sahoo</div>
-						<div class="pub-congress">In IROS 2022 Workshop Probabilistic Robotics in the Age of Deep Learning</div>
-						<div class="mt-1">
-							<span>
-							<i class="far fa-file-pdf"></i>
-							<a href="https://openreview.net/forum?id=tvPtqbjsKgX" target="_blank" class="link-dark">Link</a>
-							</span>
-						</div>
-						</div>
-						
-						<div class="pub-block">
-						<div class="lucida-console h5">HRV and GSR as Viable Physiological Markers for Mental Health Recognition</div>
-						<div class="pub-authors mt-1"><span class="pub-author">Sikha</span>, Aryan, Lovish Arya, Divyasikha Sethia</div>
-						<div class="pub-congress">In 2022 14th International Conference on Communication Systems and Networks (COMSNETS)</div>
-						<div class="mt-1">
-							<span>
-							<i class="far fa-file-pdf"></i>
-							<a href="https://ieeexplore.ieee.org/document/9668439" target="_blank" class="link-dark">Link</a>
-							</span>
-						</div>
-						</div>
-						
-						<div class="pub-block">
-						<div class="lucida-console h5">Realization of Low-Cost Footwear Integrated Step-Counting Device for Health Monitoring System</div>
-						<div class="pub-authors mt-1"><span class="pub-author">Aryan</span>, Poornima Mittal</div>
-						<div class="pub-congress">In Journal of Physics: Conference Series (ISSN: 1742-6596)</div>
-						<div class="mt-1">
-							<span>
-							<i class="far fa-file-pdf"></i>
-							<a href="https://iopscience.iop.org/article/10.1088/1742-6596/1998/1/012006" target="_blank" class="link-dark">Link</a>
-							</span>
-						</div>
-						</div>
-					</div>
-					
-					<!-- 2022 Publications -->
-					<div class="row mt-3">
-						<h2 class="pub-year-h2">2022</h2>
-						
-						<div class="pub-block">
-						<div class="lucida-console h5">Thermal Study of MOSFET heat sinks for Motor Controller in Neighborhood Electric Vehicles (NEV)</div>
-						<div class="pub-authors mt-1"><span class="pub-author">Kshitij Tripathi</span>, Aryan, Aakash Ghosh, Mini Sreejeth, S. Indu</div>
-						<div class="pub-congress">(Under Review)</div>
-						</div>
-					</div>
-					
-					</div>
-				</div>
-				
-				
-
-				<!-- Projects -->
-				<style>
-					/* Dark themed project cards */
-					.project-card {
-					background-color: #3b3b3b; /* Dark background */
-					color: #f2f2f2;            /* Light text */
-					border: none;
-					border-radius: 10px;
-					box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
-					transition: transform 0.2s ease-in-out;
-					margin-bottom: 20px;
-					}
-					.project-card:hover {
-					transform: translateY(-5px);
-					}
-					.project-card a {
-					color: #9ecfff;
-					text-decoration: none;
-					}
-					.project-card a:hover {
-					color: #c0e4ff;
-					}
-					
-					/* Date text styling for projects */
-					.project-date {
-					color: #9ecfff;
-					}
-				</style>
-				
-				<div class="col-md-8 offset-md-1 mb-5" id="projectContent">
-					<div class="container">
-					
-					<!-- Self-Supervised Flare Removal -->
-					<div class="card project-card">
-						<div class="card-body">
-						<h2 class="card-title">Self-Supervised Flare Removal from Images</h2>
-						<h6 class="card-subtitle mb-2 project-date">(August 2021 - Present, DTU, New Delhi, India)</h6>
-						<p class="card-text">
-							Developed a framework for training a flare removal network using random flare and flare-free images extracted from the internet, eliminating the need for labels.
-						</p>
-						<ul>
-							<li>Worked on synthetic data generation required to train the algorithm.</li>
-						</ul>
-						</div>
-					</div>
-					
-					<!-- Legal Document Summarization with Fine-tuned LLM and RAG Pipeline Code -->
-					<div class="card project-card">
-						<div class="card-body">
-						<h2 class="card-title">Legal Document Summarization with Fine-tuned LLM and RAG Pipeline Code</h2>
-						<h6 class="card-subtitle mb-2 project-date">(Jan 2024 - May 2024, Carnegie Mellon University, Pittsburgh)</h6>
-						<p class="card-text">
-							Developed a robust pipeline for summarizing lengthy Indian legal documents by fine-tuning a large language model and integrating a retrieval-augmented generation system.
-						</p>
-						<ul>
-							<li>Used LoRA to adapt Llama-2-7b for summarizing lengthy Indian legal documents with domain-specific terms.</li>
-							<li>Deployed a RAG pipeline using FAISS and TF-IDF for efficient document retrieval and scalable summarization.</li>
-						</ul>
-						</div>
-					</div>
-					
-					<!-- Griffin - Unmanned Ground Vehicle -->
-					<div class="card project-card">
-						<div class="card-body">
-						<h2 class="card-title">Griffin - Unmanned Ground Vehicle</h2>
-						<h6 class="card-subtitle mb-2 project-date">(August 2019 - August 2021, DTU, New Delhi, India)</h6>
-						<p class="card-text">
-							Developed an autonomous ground vehicle to represent Delhi Technological University in the <strong>Intelligent Ground Vehicle Competition</strong> at Oakland University, Rochester, Michigan.
-						</p>
-						<ul>
-							<li>Engineered the navigation stack of a self-driving rover using Robot Operating System (ROS) with lane detection and obstacle avoidance.</li>
-							<li>Utilized ROS packages such as Slam_gmapping, Move_base, and Costmap for synchronization with real-world environments.</li>
-							<li>Implemented sensor fusion with IMU, GPS, Lidar, odometers, micro-controllers, and actuators.</li>
-							<li>Supervisor: <strong>Dr. S. Indu</strong> <a href="http://people.dtu.ac.in/faculty/view.php?uname=sindu" class="link-dark" target="_blank">(Personal Webpage)</a></li>
-						</ul>
-						</div>
-					</div>
-					
-					<!-- Study of Neural Network Implementation on FPGAs -->
-					<div class="card project-card">
-						<div class="card-body">
-						<h2 class="card-title">Study of Neural Network Implementation on FPGAs</h2>
-						<h6 class="card-subtitle mb-2 project-date">(Jan 2021 - May 2021, DTU, New Delhi, India)</h6>
-						<p class="card-text">
-							Compared different methods to implement neural networks on FPGAs and determined the best approach for early prototyping using high-level languages like Python.
-						</p>
-						</div>
-					</div>
-					
-					<!-- Micro-Mouse Challenge -->
-					<div class="card project-card">
-						<div class="card-body">
-						<h2 class="card-title">Micro-Mouse Challenge</h2>
-						<h6 class="card-subtitle mb-2 project-date">(December 2020, IIT Bombay TechFest)</h6>
-						<p class="card-text">
-							Participated in the Micro-Mouse simulation challenge at IIT Bombay's TechFest, solving a maze using a simulation in Gazebo.
-						</p>
-						<ul>
-							<li>Implemented a backtracking algorithm for maze exploration and created a map using the Slam_gmapping package in ROS.</li>
-							<li><a href="https://drive.google.com/drive/u/2/folders/1pSkHDVi7e_F-uOzvFQTFc2fAJ0qta1Pk" class="link-dark" target="_blank">Project Documentation (Drive Link)</a></li>
-						</ul>
-						</div>
-					</div>
-					
-					<!-- Line Follower Minidrone -->
-					<div class="card project-card">
-						<div class="card-body">
-						<h2 class="card-title">Line Follower Minidrone</h2>
-						<h6 class="card-subtitle mb-2 project-date">(April 2021 - June 2021, MATLAB Minidrone Competition)</h6>
-						<p class="card-text">
-							Developed a line-follower algorithm based on model-based design using MATLAB and Simulink for a Parrot minidrone.
-						</p>
-						<ul>
-							<li><a href="https://github.com/de-viant/UGV-DTU-at-MinidroneCompetition2021.git" class="link-dark" target="_blank">GitHub Link</a></li>
-						</ul>
-						</div>
-					</div>
-					
-					<!-- Localization Package for UAV -->
-					<div class="card project-card">
-						<div class="card-body">
-						<h2 class="card-title">Localization Package for Unmanned Aerial Vehicle</h2>
-						<h6 class="card-subtitle mb-2 project-date">(April 2021 - July 2021, India)</h6>
-						<p class="card-text">
-							Developed a localization package for UAVs in dim-light and GPS-denied environments with Octobotics Tech Private Limited.
-						</p>
-						<ul>
-							<li>Developed using Robot Operating System (ROS).</li>
-						</ul>
-						</div>
-					</div>
-					
-					<!-- Ministry of Electronics and Information Technology Sponsored R&D Project -->
-					<div class="card project-card">
-						<div class="card-body">
-						<h2 class="card-title">Ministry of Electronics and Information Technology Sponsored R&D Project</h2>
-						<h6 class="card-subtitle mb-2 project-date">(Jan 2021 - July 2021, India)</h6>
-						<p class="card-text">
-							Worked on developing and deploying motor controllers for low and medium-power electric vehicles.
-						</p>
-						<ul>
-							<li>Reduced the average temperature of MOSFETs by 10 degrees through optimal heat-sink design.</li>
-						</ul>
-						</div>
-					</div>
-					
-					</div>
-				</div>
-				
-				
-								
-
-				<!-- Modified Honors and Awards Section -->
-				<style>
-					/* Styles for the awards cards */
-					.awards-card {
-					background-color: #3b3b3b;  /* Dark background */
-					color: #f2f2f2;             /* Light text */
-					border: none;
-					border-radius: 10px;
-					box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
-					padding: 20px;
-					margin-bottom: 15px;
-					transition: transform 0.2s ease-in-out;
-					}
-					.awards-card:hover {
-					transform: translateY(-5px);
-					}
-					.awards-card h4 {
-					margin-bottom: 8px;
-					}
-					.awards-card p {
-					margin-bottom: 5px;
-					}
-					.awards-date {
-					color: #9ecfff;
-					font-size: 0.9rem;
-					}
-				</style>
-				
-				<div class="col-md-8 offset-md-1 mb-5" id="awardsContent">
-					<div class="container">
-					<div class="mt-1">
-						
-						<!-- JN Tata Endowment for Higher Education -->
-						<div class="awards-card">
-						<h4 class="fw-bold">JN Tata Endowment for Higher Education</h4>
-						<p>Top 0.1% in a pool of 10,000+ applicants</p>
-						<span class="awards-date">Mar, 2023</span>
-						</div>
-						
-						<!-- Robotics Institute Summer Scholarship -->
-						<div class="awards-card">
-						<h4 class="fw-bold">Robotics Institute Summer Scholarship</h4>
-						<p>One of the 4 students from India selected for the prestigious research internship at Carnegie Mellon University</p>
-						<span class="awards-date">Mar, 2022</span>
-						</div>
-						
-						<!-- Intelligent Ground Vehicle Competition -->
-						<div class="awards-card">
-						<h4 class="fw-bold">Intelligent Ground Vehicle Competition</h4>
-						<p>Secured 1st position in the Cybersecurity Challenge for the IGVC competition held at Oakland University in Rochester, Michigan</p>
-						<span class="awards-date">Mar, 2022</span>
-						</div>
-						
-						<!-- DAAD WISE Internship -->
-						<div class="awards-card">
-						<h4 class="fw-bold">DAAD WISE Internship</h4>
-						<p>One of the 80 students from India selected for research in Germany</p>
-						<span class="awards-date">Mar, 2022</span>
-						</div>
-						
-						<!-- Mitacs Globalink Internship -->
-						<div class="awards-card">
-						<h4 class="fw-bold">Mitacs Globalink Internship</h4>
-						<p>One of the 117 students from India selected for an internship in Canada (M.S.)</p>
-						<span class="awards-date">Mar, 2022</span>
-						</div>
-						
-						<!-- MATLAB Minidrone Competition -->
-						<div class="awards-card">
-						<h4 class="fw-bold">MATLAB Minidrone Competition</h4>
-						<p>
-							Qualified for the International Finale in MATLAB Minidrone Competition. Our team was one of the top 8 teams from Europe, Middle East, and Asia for Line Following Minidrone.
-						</p>
-						<span class="awards-date">Oct, 2021</span>
-						</div>
-						
-					</div>
-					</div>
-				</div>
-							
-						  
-				
-				
-				
-
-				
 				<!-- Conferences -->
 				<!-- <div class="col-md-8 offset-md-1 mb-5" id="conferencesContent">
 					<div class="container language">
@@ -976,8 +730,8 @@
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-		<script src="assets/js/languageManager.js"></script>
-		<script src="assets/js/main.js"></script>
+		<script src="assets/js/languageManager.js?v=2"></script>
+		<script src="assets/js/main.js?v=8"></script>
 	</body>
 
 </html>

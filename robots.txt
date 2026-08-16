@@ -1,3 +1,4 @@
-User-agent: Googlebot
-User-agent: AdsBot-Google
+User-agent: *
 Allow: /
+
+Sitemap: https://aryanmangal769.github.io/sitemap.xml
