@@ -11,6 +11,7 @@ $(document).ready(function(){
 	sizeExpScroll();
 	initSmoothNav();
 	initScrollSpy();
+	initInlineVideos();
 	$(window).on('resize.expscroll', sizeExpScroll);
 	$('#industry-list img, #research-list img, #projects-list img, #projects-list video, #research-list video').on('load loadedmetadata', sizeExpScroll);
 
@@ -170,6 +171,27 @@ function bindSeeMoreButtons() {
 			}, 280);
 		}
 	});
+}
+
+function initInlineVideos() {
+	const videos = document.querySelectorAll('video[autoplay]');
+	const tryPlay = function(v) {
+		v.muted = true;
+		const p = v.play();
+		if (p && p.catch) p.catch(function() {});
+	};
+	videos.forEach(function(v) {
+		tryPlay(v);
+		v.addEventListener('canplay', function() { tryPlay(v); });
+	});
+	if (!('IntersectionObserver' in window)) return;
+	const io = new IntersectionObserver(function(entries) {
+		entries.forEach(function(entry) {
+			if (entry.isIntersecting) tryPlay(entry.target);
+			else entry.target.pause();
+		});
+	}, { threshold: 0.35 });
+	videos.forEach(function(v) { io.observe(v); });
 }
 
 function initSmoothNav() {

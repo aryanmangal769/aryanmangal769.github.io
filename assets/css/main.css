@@ -591,22 +591,18 @@ li > .active {
 	background: rgba(0, 0, 0, 0.04);
 }
 
-.research-media img,
-.research-media video,
-.research-media iframe {
+.research-media > img,
+.research-media > video,
+.research-media > iframe {
+	position: absolute;
+	inset: 0;
 	display: block;
 	width: 100%;
-	height: auto;
-	aspect-ratio: 16 / 10;
+	height: 100%;
 	object-fit: cover;
 	border: 0;
 	border-radius: 0;
-}
-
-.research-media iframe {
-	height: 100%;
-	min-height: 0;
-	aspect-ratio: 16 / 10;
+	aspect-ratio: auto;
 }
 
 .research-media video {
@@ -622,6 +618,7 @@ li > .active {
 }
 
 .research-media-logo img {
+	position: static;
 	width: auto;
 	height: auto;
 	max-width: 72%;
